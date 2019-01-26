@@ -1,0 +1,2644 @@
+{
+    "name": "One Way Love",
+    "filepath": "AudioClips/OneWayLove",
+    "bpm": 90,
+    "noteValue": 4,
+    "timeOffset": 0.28,
+    "upsideDown": false,
+    "charts": [
+        {
+            "difficultyLevel": 2,
+            "difficulty": "Easy",
+            "noteValue": 2,
+            "notes": [
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -8
+                        }
+                    ],
+                    "stepOffset": 16
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 8
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 4
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -4
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 8
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -8
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -6
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 6
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "Shake",
+                    "rhythms": [
+                        {
+                            "positionX": 4,
+                            "tempo": 1
+                        },
+                        {
+                            "positionX": 3,
+                            "tempo": 1
+                        },
+                        {
+                            "positionX": 2,
+                            "tempo": 1
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "MediumTap",
+                    "rhythms": [
+                        {
+                            "positionX": -2,
+                            "tempo": 6
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 8
+                        }
+                    ],
+                    "stepOffset": 6
+                },
+                {
+                    "beatingStyle": "Shake",
+                    "rhythms": [
+                        {
+                            "positionX": -4,
+                            "tempo": 1
+                        },
+                        {
+                            "positionX": -3,
+                            "tempo": 1
+                        },
+                        {
+                            "positionX": -2,
+                            "tempo": 1
+                        }
+                    ],
+                    "stepOffset": 6
+                },
+                {
+                    "beatingStyle": "MediumTap",
+                    "rhythms": [
+                        {
+                            "positionX": 2,
+                            "tempo": 6
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -8
+                        }
+                    ],
+                    "stepOffset": 6
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 4
+                        }
+                    ],
+                    "stepOffset": 6
+                },
+                {
+                    "beatingStyle": "LongTap",
+                    "rhythms": [
+                        {
+                            "positionX": -2,
+                            "tempo": 32
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 8
+                        }
+                    ],
+                    "stepOffset": 36
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 4
+                        }
+                    ],
+                    "stepOffset": 6
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 0
+                        }
+                    ],
+                    "stepOffset": 6
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -4
+                        }
+                    ],
+                    "stepOffset": 6
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -8
+                        }
+                    ],
+                    "stepOffset": 6
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 8
+                        }
+                    ],
+                    "stepOffset": 0
+                },
+                {
+                    "beatingStyle": "MediumTap",
+                    "rhythms": [
+                        {
+                            "positionX": 6,
+                            "tempo": 8
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "MediumTap",
+                    "rhythms": [
+                        {
+                            "positionX": -6,
+                            "tempo": 8
+                        }
+                    ],
+                    "stepOffset": 0
+                },
+                {
+                    "beatingStyle": "Shake",
+                    "rhythms": [
+                        {
+                            "positionX": -6,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": -7,
+                            "tempo": 2
+                        }
+                    ],
+                    "stepOffset": 12
+                },
+                {
+                    "beatingStyle": "Shake",
+                    "rhythms": [
+                        {
+                            "positionX": 0,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": 1,
+                            "tempo": 2
+                        }
+                    ],
+                    "stepOffset": 14
+                },
+                {
+                    "beatingStyle": "MediumTap",
+                    "rhythms": [
+                        {
+                            "positionX": 3,
+                            "tempo": 8
+                        }
+                    ],
+                    "stepOffset": 6
+                },
+                {
+                    "beatingStyle": "MediumTap",
+                    "rhythms": [
+                        {
+                            "positionX": -3,
+                            "tempo": 8
+                        }
+                    ],
+                    "stepOffset": 0
+                },
+                {
+                    "beatingStyle": "Shake",
+                    "rhythms": [
+                        {
+                            "positionX": 6,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": 7,
+                            "tempo": 2
+                        }
+                    ],
+                    "stepOffset": 12
+                },
+                {
+                    "beatingStyle": "Shake",
+                    "rhythms": [
+                        {
+                            "positionX": 0,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": -1,
+                            "tempo": 2
+                        }
+                    ],
+                    "stepOffset": 14
+                },
+                {
+                    "beatingStyle": "MediumTap",
+                    "rhythms": [
+                        {
+                            "positionX": -8,
+                            "tempo": 12
+                        }
+                    ],
+                    "stepOffset": 6
+                },
+                {
+                    "beatingStyle": "Shake",
+                    "rhythms": [
+                        {
+                            "positionX": 8,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": 6,
+                            "tempo": 2
+                        }
+                    ],
+                    "stepOffset": 12
+                },
+                {
+                    "beatingStyle": "MediumTap",
+                    "rhythms": [
+                        {
+                            "positionX": -5,
+                            "tempo": 12
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -3
+                        }
+                    ],
+                    "stepOffset": 16
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 3
+                        }
+                    ],
+                    "stepOffset": 0
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -2
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "MediumTap",
+                    "rhythms": [
+                        {
+                            "positionX": 2,
+                            "tempo": 10
+                        }
+                    ],
+                    "stepOffset": 2
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -7
+                        }
+                    ],
+                    "stepOffset": 26
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 7
+                        }
+                    ],
+                    "stepOffset": 0
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 5
+                        }
+                    ],
+                    "stepOffset": 6
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -5
+                        }
+                    ],
+                    "stepOffset": 2
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 5
+                        }
+                    ],
+                    "stepOffset": 2
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -5
+                        }
+                    ],
+                    "stepOffset": 2
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 5
+                        }
+                    ],
+                    "stepOffset": 2
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -2
+                        }
+                    ],
+                    "stepOffset": 2
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 2
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -2
+                        }
+                    ],
+                    "stepOffset": 2
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -2
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 2
+                        }
+                    ],
+                    "stepOffset": 2
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -8
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -8
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "LongTap",
+                    "rhythms": [
+                        {
+                            "positionX": 8,
+                            "tempo": 20
+                        }
+                    ],
+                    "stepOffset": 2
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -8
+                        }
+                    ],
+                    "stepOffset": 6
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -2
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -2
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "MediumTap",
+                    "rhythms": [
+                        {
+                            "positionX": -7,
+                            "tempo": 12
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 5
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 5
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "Shake",
+                    "rhythms": [
+                        {
+                            "positionX": 3,
+                            "tempo": 6
+                        },
+                        {
+                            "positionX": 1,
+                            "tempo": 6
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -3
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -3
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 3
+                        }
+                    ],
+                    "stepOffset": 0
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -5
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "MediumTap",
+                    "rhythms": [
+                        {
+                            "positionX": 7,
+                            "tempo": 12
+                        }
+                    ],
+                    "stepOffset": 0
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -5
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -5
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -5
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -2
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 2
+                        }
+                    ],
+                    "stepOffset": 0
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 2
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -2
+                        }
+                    ],
+                    "stepOffset": 2
+                },
+                {
+                    "beatingStyle": "Shake",
+                    "rhythms": [
+                        {
+                            "positionX": 2,
+                            "tempo": 1
+                        },
+                        {
+                            "positionX": 0,
+                            "tempo": 1
+                        },
+                        {
+                            "positionX": -2,
+                            "tempo": 1
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "MediumTap",
+                    "rhythms": [
+                        {
+                            "positionX": -8,
+                            "tempo": 4
+                        }
+                    ],
+                    "stepOffset": 6
+                },
+                {
+                    "beatingStyle": "MediumTap",
+                    "rhythms": [
+                        {
+                            "positionX": 8,
+                            "tempo": 4
+                        }
+                    ],
+                    "stepOffset": 6
+                },
+                {
+                    "beatingStyle": "LongTap",
+                    "rhythms": [
+                        {
+                            "positionX": -5,
+                            "tempo": 20
+                        }
+                    ],
+                    "stepOffset": 6
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 3
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 3
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 0
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 6
+                        }
+                    ],
+                    "stepOffset": 0
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 0
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 6
+                        }
+                    ],
+                    "stepOffset": 0
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -3
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 3
+                        }
+                    ],
+                    "stepOffset": 0
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -3
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 3
+                        }
+                    ],
+                    "stepOffset": 0
+                },
+                {
+                    "beatingStyle": "MediumTap",
+                    "rhythms": [
+                        {
+                            "positionX": 8,
+                            "tempo": 4
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "MediumTap",
+                    "rhythms": [
+                        {
+                            "positionX": -8,
+                            "tempo": 4
+                        }
+                    ],
+                    "stepOffset": 6
+                },
+                {
+                    "beatingStyle": "LongTap",
+                    "rhythms": [
+                        {
+                            "positionX": 5,
+                            "tempo": 12
+                        }
+                    ],
+                    "stepOffset": 6
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -3
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -3
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 0
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -6
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 0
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 0
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -6
+                        }
+                    ],
+                    "stepOffset": 0
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 3
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -3
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 3
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 3
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -3
+                        }
+                    ],
+                    "stepOffset": 0
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -6
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 8
+                        }
+                    ],
+                    "stepOffset": 0
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -8
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 6
+                        }
+                    ],
+                    "stepOffset": 0
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -6
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 8
+                        }
+                    ],
+                    "stepOffset": 0
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -8
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 6
+                        }
+                    ],
+                    "stepOffset": 0
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 2
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -2
+                        }
+                    ],
+                    "stepOffset": 2
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 2
+                        }
+                    ],
+                    "stepOffset": 2
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -2
+                        }
+                    ],
+                    "stepOffset": 2
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 2
+                        }
+                    ],
+                    "stepOffset": 2
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -2
+                        }
+                    ],
+                    "stepOffset": 2
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 2
+                        }
+                    ],
+                    "stepOffset": 2
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -2
+                        }
+                    ],
+                    "stepOffset": 2
+                },
+                {
+                    "beatingStyle": "MediumTap",
+                    "rhythms": [
+                        {
+                            "positionX": -6,
+                            "tempo": 8
+                        }
+                    ],
+                    "stepOffset": 2
+                },
+                {
+                    "beatingStyle": "MediumTap",
+                    "rhythms": [
+                        {
+                            "positionX": 6,
+                            "tempo": 8
+                        }
+                    ],
+                    "stepOffset": 0
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -6
+                        }
+                    ],
+                    "stepOffset": 12
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 6
+                        }
+                    ],
+                    "stepOffset": 0
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -6
+                        }
+                    ],
+                    "stepOffset": 2
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 6
+                        }
+                    ],
+                    "stepOffset": 0
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -2
+                        }
+                    ],
+                    "stepOffset": 14
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 6
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -6
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -8
+                        }
+                    ],
+                    "stepOffset": 6
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 8
+                        }
+                    ],
+                    "stepOffset": 0
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 2
+                        }
+                    ],
+                    "stepOffset": 10
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -2
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "MediumTap",
+                    "rhythms": [
+                        {
+                            "positionX": 8,
+                            "tempo": 4
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "MediumTap",
+                    "rhythms": [
+                        {
+                            "positionX": -8,
+                            "tempo": 4
+                        }
+                    ],
+                    "stepOffset": 6
+                },
+                {
+                    "beatingStyle": "LongTap",
+                    "rhythms": [
+                        {
+                            "positionX": 5,
+                            "tempo": 8
+                        }
+                    ],
+                    "stepOffset": 6
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -2
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -2
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 2
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "MediumTap",
+                    "rhythms": [
+                        {
+                            "positionX": -8,
+                            "tempo": 4
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "MediumTap",
+                    "rhythms": [
+                        {
+                            "positionX": 8,
+                            "tempo": 4
+                        }
+                    ],
+                    "stepOffset": 6
+                },
+                {
+                    "beatingStyle": "LongTap",
+                    "rhythms": [
+                        {
+                            "positionX": -5,
+                            "tempo": 8
+                        }
+                    ],
+                    "stepOffset": 6
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 2
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 2
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -2
+                        }
+                    ],
+                    "stepOffset": 2
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 2
+                        }
+                    ],
+                    "stepOffset": 2
+                },
+                {
+                    "beatingStyle": "Shake",
+                    "rhythms": [
+                        {
+                            "positionX": -7,
+                            "tempo": 4
+                        },
+                        {
+                            "positionX": -5,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": -7,
+                            "tempo": 6
+                        },
+                        {
+                            "positionX": -5,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": -7,
+                            "tempo": 6
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 6
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 6
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -2
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -2
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 2
+                        }
+                    ],
+                    "stepOffset": 2
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -2
+                        }
+                    ],
+                    "stepOffset": 2
+                },
+                {
+                    "beatingStyle": "Shake",
+                    "rhythms": [
+                        {
+                            "positionX": 7,
+                            "tempo": 4
+                        },
+                        {
+                            "positionX": 5,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": 7,
+                            "tempo": 6
+                        },
+                        {
+                            "positionX": 5,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": 7,
+                            "tempo": 6
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -6
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -6
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 2
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 2
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -2
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "Shake",
+                    "rhythms": [
+                        {
+                            "positionX": 4,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": 5,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": 6,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": 7,
+                            "tempo": 2
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "Shake",
+                    "rhythms": [
+                        {
+                            "positionX": -3,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": -4,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": -5,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": -6,
+                            "tempo": 2
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "Shake",
+                    "rhythms": [
+                        {
+                            "positionX": 6,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": 5,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": 4,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": 3,
+                            "tempo": 2
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "Shake",
+                    "rhythms": [
+                        {
+                            "positionX": -7,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": -6,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": -5,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": -4,
+                            "tempo": 2
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "Shake",
+                    "rhythms": [
+                        {
+                            "positionX": 4,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": 3,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": 2,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": 1,
+                            "tempo": 2
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "Shake",
+                    "rhythms": [
+                        {
+                            "positionX": -5,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": -4,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": -3,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": -2,
+                            "tempo": 2
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "Shake",
+                    "rhythms": [
+                        {
+                            "positionX": 2,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": 3,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": 4,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": 5,
+                            "tempo": 2
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "Shake",
+                    "rhythms": [
+                        {
+                            "positionX": -1,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": -2,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": -3,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": -4,
+                            "tempo": 2
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "Shake",
+                    "rhythms": [
+                        {
+                            "positionX": 7,
+                            "tempo": 4
+                        },
+                        {
+                            "positionX": 5,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": 7,
+                            "tempo": 6
+                        },
+                        {
+                            "positionX": 5,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": 7,
+                            "tempo": 6
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -6
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -6
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 2
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -2
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -7
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 5
+                        }
+                    ],
+                    "stepOffset": 0
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -6
+                        }
+                    ],
+                    "stepOffset": 6
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 6
+                        }
+                    ],
+                    "stepOffset": 0
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -5
+                        }
+                    ],
+                    "stepOffset": 6
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 7
+                        }
+                    ],
+                    "stepOffset": 0
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -3
+                        }
+                    ],
+                    "stepOffset": 10
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 3
+                        }
+                    ],
+                    "stepOffset": 2
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -3
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "LongTap",
+                    "rhythms": [
+                        {
+                            "positionX": 0,
+                            "tempo": 34
+                        }
+                    ],
+                    "stepOffset": 2
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -3
+                        }
+                    ],
+                    "stepOffset": 66
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 3
+                        }
+                    ],
+                    "stepOffset": 0
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 1
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -1
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -5
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 5
+                        }
+                    ],
+                    "stepOffset": 0
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 7
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -7
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 3
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -3
+                        }
+                    ],
+                    "stepOffset": 2
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 3
+                        }
+                    ],
+                    "stepOffset": 2
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -3
+                        }
+                    ],
+                    "stepOffset": 2
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 3
+                        }
+                    ],
+                    "stepOffset": 2
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -3
+                        }
+                    ],
+                    "stepOffset": 2
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 3
+                        }
+                    ],
+                    "stepOffset": 2
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -3
+                        }
+                    ],
+                    "stepOffset": 2
+                },
+                {
+                    "beatingStyle": "MediumTap",
+                    "rhythms": [
+                        {
+                            "positionX": 0,
+                            "tempo": 8
+                        }
+                    ],
+                    "stepOffset": 2
+                },
+                {
+                    "beatingStyle": "MediumTap",
+                    "rhythms": [
+                        {
+                            "positionX": -8,
+                            "tempo": 4
+                        }
+                    ],
+                    "stepOffset": 16
+                },
+                {
+                    "beatingStyle": "MediumTap",
+                    "rhythms": [
+                        {
+                            "positionX": 8,
+                            "tempo": 4
+                        }
+                    ],
+                    "stepOffset": 6
+                },
+                {
+                    "beatingStyle": "LongTap",
+                    "rhythms": [
+                        {
+                            "positionX": -5,
+                            "tempo": 8
+                        }
+                    ],
+                    "stepOffset": 6
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 2
+                        }
+                    ],
+                    "stepOffset": 12
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -2
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "MediumTap",
+                    "rhythms": [
+                        {
+                            "positionX": 8,
+                            "tempo": 4
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "MediumTap",
+                    "rhythms": [
+                        {
+                            "positionX": -8,
+                            "tempo": 4
+                        }
+                    ],
+                    "stepOffset": 6
+                },
+                {
+                    "beatingStyle": "LongTap",
+                    "rhythms": [
+                        {
+                            "positionX": 5,
+                            "tempo": 8
+                        }
+                    ],
+                    "stepOffset": 6
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -2
+                        }
+                    ],
+                    "stepOffset": 12
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 2
+                        }
+                    ],
+                    "stepOffset": 2
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -2
+                        }
+                    ],
+                    "stepOffset": 2
+                },
+                {
+                    "beatingStyle": "Shake",
+                    "rhythms": [
+                        {
+                            "positionX": 7,
+                            "tempo": 4
+                        },
+                        {
+                            "positionX": 5,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": 7,
+                            "tempo": 6
+                        },
+                        {
+                            "positionX": 5,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": 7,
+                            "tempo": 6
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 2
+                        }
+                    ],
+                    "stepOffset": 24
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -2
+                        }
+                    ],
+                    "stepOffset": 2
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 2
+                        }
+                    ],
+                    "stepOffset": 2
+                },
+                {
+                    "beatingStyle": "Shake",
+                    "rhythms": [
+                        {
+                            "positionX": -7,
+                            "tempo": 4
+                        },
+                        {
+                            "positionX": -5,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": -7,
+                            "tempo": 6
+                        },
+                        {
+                            "positionX": -5,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": -7,
+                            "tempo": 6
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "MediumTap",
+                    "rhythms": [
+                        {
+                            "positionX": 7,
+                            "tempo": 14
+                        }
+                    ],
+                    "stepOffset": 0
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -2
+                        }
+                    ],
+                    "stepOffset": 24
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 2
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "Shake",
+                    "rhythms": [
+                        {
+                            "positionX": -4,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": -5,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": -6,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": -7,
+                            "tempo": 2
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "Shake",
+                    "rhythms": [
+                        {
+                            "positionX": 3,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": 4,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": 5,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": 6,
+                            "tempo": 2
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "Shake",
+                    "rhythms": [
+                        {
+                            "positionX": -6,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": -5,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": -4,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": -3,
+                            "tempo": 2
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "Shake",
+                    "rhythms": [
+                        {
+                            "positionX": 7,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": 6,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": 5,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": 4,
+                            "tempo": 2
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "Shake",
+                    "rhythms": [
+                        {
+                            "positionX": -4,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": -3,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": -2,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": -1,
+                            "tempo": 2
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "Shake",
+                    "rhythms": [
+                        {
+                            "positionX": 5,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": 4,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": 3,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": 2,
+                            "tempo": 2
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "Shake",
+                    "rhythms": [
+                        {
+                            "positionX": -2,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": -3,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": -4,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": -5,
+                            "tempo": 2
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "Shake",
+                    "rhythms": [
+                        {
+                            "positionX": 1,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": 2,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": 3,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": 4,
+                            "tempo": 2
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "Shake",
+                    "rhythms": [
+                        {
+                            "positionX": -7,
+                            "tempo": 4
+                        },
+                        {
+                            "positionX": -5,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": -7,
+                            "tempo": 6
+                        },
+                        {
+                            "positionX": -5,
+                            "tempo": 2
+                        },
+                        {
+                            "positionX": -7,
+                            "tempo": 6
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 6
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 6
+                        }
+                    ],
+                    "stepOffset": 8
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 2
+                        }
+                    ],
+                    "stepOffset": 16
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -5
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 7
+                        }
+                    ],
+                    "stepOffset": 0
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -6
+                        }
+                    ],
+                    "stepOffset": 6
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 6
+                        }
+                    ],
+                    "stepOffset": 0
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -7
+                        }
+                    ],
+                    "stepOffset": 6
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 5
+                        }
+                    ],
+                    "stepOffset": 0
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 3
+                        }
+                    ],
+                    "stepOffset": 10
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -3
+                        }
+                    ],
+                    "stepOffset": 2
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 3
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "LongTap",
+                    "rhythms": [
+                        {
+                            "positionX": 0,
+                            "tempo": 34
+                        }
+                    ],
+                    "stepOffset": 2
+                },
+                {
+                    "beatingStyle": "Shake",
+                    "rhythms": [
+                        {
+                            "positionX": -1,
+                            "tempo": 1
+                        },
+                        {
+                            "positionX": -2,
+                            "tempo": 1
+                        },
+                        {
+                            "positionX": -3,
+                            "tempo": 1
+                        }
+                    ],
+                    "stepOffset": 54
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 2
+                        }
+                    ],
+                    "stepOffset": 4
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -2
+                        }
+                    ],
+                    "stepOffset": 3
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 2
+                        }
+                    ],
+                    "stepOffset": 3
+                },
+                {
+                    "beatingStyle": "MediumTap",
+                    "rhythms": [
+                        {
+                            "positionX": -5,
+                            "tempo": 16
+                        }
+                    ],
+                    "stepOffset": 2
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": 2
+                        }
+                    ],
+                    "stepOffset": 26
+                },
+                {
+                    "beatingStyle": "ShortTap",
+                    "rhythms": [
+                        {
+                            "positionX": -2
+                        }
+                    ],
+                    "stepOffset": 2
+                },
+                {
+                    "beatingStyle": "LongTap",
+                    "rhythms": [
+                        {
+                            "positionX": 5,
+                            "tempo": 34
+                        }
+                    ],
+                    "stepOffset": 2
+                }
+            ]
+        },
+        {
+            "difficultyLevel": 6,
+            "difficulty": "Hard",
+            "noteValue": 2,
+            "notes": [
+                {}
+            ]
+        },
+        {
+            "difficultyLevel": 9,
+            "difficulty": "Chaos",
+            "noteValue": 4,
+            "notes": [
+                {}
+            ]
+        }
+    ]
+}
