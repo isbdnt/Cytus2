@@ -106,7 +106,7 @@ namespace Cytus2
         protected virtual void Initialize(SongData songData, ChartData chartData, AudioClip audioClip)
         {
             float beatLength = 60f / songData.bpm;
-            turnLength = beatLength * songData.noteValue / chartData.noteValue;
+            turnLength = beatLength * songData.beatUnit / chartData.beatUnit;
             _stepLength = turnLength / 16f;
             _turnTimeOffset = turnLength - beatLength * 0.125f;
             _audioSource.clip = audioClip;
@@ -117,7 +117,7 @@ namespace Cytus2
 
         private void ResetState()
         {
-            _grid = new Grid(_chartData, 2 / (_songData.noteValue / _chartData.noteValue));
+            _grid = new Grid(_chartData, 2 / (_songData.beatUnit / _chartData.beatUnit));
             _grid.onAddNote += HandleGridAddNote;
             _grid.onRemoveNote += HandleGridRemoveNote;
             _grid.onPointChange += HandleGridPointChange;

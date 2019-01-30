@@ -4,7 +4,7 @@
     {
         public string name;
         public int bpm;//beats per minute
-        public int noteValue;//note value of the beat
+        public int beatUnit;//beat unit of time signature
         public float timeOffset;
         public bool upsideDown;
         public ChartData[] charts;

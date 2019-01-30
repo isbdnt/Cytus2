@@ -2,14 +2,14 @@
     "name": "One Way Love",
     "filepath": "AudioClips/OneWayLove",
     "bpm": 90,
-    "noteValue": 4,
+    "beatUnit": 4,
     "timeOffset": 0.28,
     "upsideDown": false,
     "charts": [
         {
             "difficultyLevel": 2,
             "difficulty": "Easy",
-            "noteValue": 2,
+            "beatUnit": 2,
             "notes": [
                 {
                     "beatingStyle": "ShortTap",
@@ -2627,7 +2627,7 @@
         {
             "difficultyLevel": 6,
             "difficulty": "Hard",
-            "noteValue": 2,
+            "beatUnit": 2,
             "notes": [
                 {}
             ]
@@ -2635,7 +2635,7 @@
         {
             "difficultyLevel": 9,
             "difficulty": "Chaos",
-            "noteValue": 4,
+            "beatUnit": 4,
             "notes": [
                 {}
             ]

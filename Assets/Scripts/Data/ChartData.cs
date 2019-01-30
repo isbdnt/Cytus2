@@ -4,7 +4,7 @@
     {
         public int level;
         public ChartDifficultyType difficulty;
-        public int noteValue;//note value of the turn
+        public int beatUnit;//beat unit of turn
         public NoteData[] notes;
     }
 }
