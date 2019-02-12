@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace Cytus2
 {
@@ -36,7 +35,7 @@ namespace Cytus2
         public void Update(float currentStep)
         {
             this.currentStep = currentStep;
-            while (_pendingNotes.Count > 0 && currentStep >= _pendingNotes.First().stepOffset)
+            while (_pendingNotes.Count > 0 && currentStep >= _pendingNotes.Peek().stepOffset)
             {
                 Note note = _pendingNotes.Dequeue();
                 _runningNotes.Add(note);

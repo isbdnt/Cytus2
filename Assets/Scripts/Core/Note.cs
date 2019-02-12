@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 namespace Cytus2
@@ -72,7 +71,7 @@ namespace Cytus2
 
         public void Update(float currentStep, ref int combo, ref int point)
         {
-            while (_pendingRhythms.Count > 0 && currentStep >= _pendingRhythms.First().stepOffset)
+            while (_pendingRhythms.Count > 0 && currentStep >= _pendingRhythms.Peek().stepOffset)
             {
                 Rhythm rhythm = _pendingRhythms.Dequeue();
                 _runningRhythms.Add(rhythm);
