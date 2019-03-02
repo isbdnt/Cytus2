@@ -20,67 +20,66 @@ namespace Cytus2
             _reloadConfigButton = transform.Find("ReloadConfig").GetComponent<Button>();
             _comboText = transform.Find("Combo").GetComponent<Text>();
             _pointText = transform.Find("Point").GetComponent<Text>();
+        }
 
+        private void Start()
+        {
             _startButton.gameObject.SetActive(true);
             _startButton.onClick.AddListener(HandleStartClick);
             _pauseButton.gameObject.SetActive(false);
             _pauseButton.onClick.AddListener(HandlePauseClick);
             _restartButton.onClick.AddListener(HandleRestartClick);
             _reloadConfigButton.onClick.AddListener(HandleReloadConfigClick);
+            BindGridEvents();
         }
 
-        private void Start()
+        private void BindGridEvents()
         {
-            MakeButtonsReasonable();
-            BindGridEvents();
+            GridView.instance.onPointChange += HandleGridPointChange;
+            GridView.instance.onComboChange += HandleGridComboChange;
+            GridView.instance.onStart += HandleGridStart;
+            GridView.instance.onPause += HandleGridPause;
         }
 
         private void HandleStartClick()
         {
             GridView.instance.StartGame();
-            MakeButtonsReasonable();
         }
 
         private void HandlePauseClick()
         {
             GridView.instance.PauseGame();
-            MakeButtonsReasonable();
         }
 
         private void HandleRestartClick()
         {
             GridView.instance.RestartGame();
-            MakeButtonsReasonable();
-            BindGridEvents();
         }
 
         private void HandleReloadConfigClick()
         {
             Main.TestOneWayLove();
-            MakeButtonsReasonable();
             BindGridEvents();
         }
 
-        private void MakeButtonsReasonable()
+        private void HandleGridStart()
         {
-            if (GridView.instance.playing)
-            {
-                _startButton.gameObject.SetActive(false);
-                _pauseButton.gameObject.SetActive(true);
-            }
-            else
-            {
-                _startButton.gameObject.SetActive(true);
-                _pauseButton.gameObject.SetActive(false);
-            }
-        }
-
-        private void BindGridEvents()
-        {
-            GridView.instance.grid.onPointChange += HandleGridPointChange;
-            GridView.instance.grid.onComboChange += HandleGridComboChange;
+            _startButton.gameObject.SetActive(false);
+            _pauseButton.gameObject.SetActive(true);
             HandleGridPointChange(0);
             HandleGridComboChange(0);
+        }
+
+        private void HandleGridContinue()
+        {
+            _startButton.gameObject.SetActive(false);
+            _pauseButton.gameObject.SetActive(true);
+        }
+
+        private void HandleGridPause()
+        {
+            _startButton.gameObject.SetActive(true);
+            _pauseButton.gameObject.SetActive(false);
         }
 
         private void HandleGridPointChange(int point)

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Cytus2
@@ -7,6 +8,16 @@ namespace Cytus2
     {
         public static GridView instance { get; private set; }
         public static GameObject prefab { get; set; }
+
+        public event Action<int> onPointChange = delegate { };
+
+        public event Action<int> onComboChange = delegate { };
+
+        public event Action onStart = delegate { };
+
+        public event Action onContinue = delegate { };
+
+        public event Action onPause = delegate { };
 
         public GridViewAnchor anchor { get; private set; }
         public Transform beatingResultContainer { get; private set; }
@@ -87,6 +98,8 @@ namespace Cytus2
             _grid = new Grid(_chartData, 2 / (_songData.beatUnit / _chartData.beatUnit));
             _grid.onAddNote += HandleGridAddNote;
             _grid.onRemoveNote += HandleGridRemoveNote;
+            _grid.onPointChange += HandleGridPointChange;
+            _grid.onComboChange += HandleGridComboChange;
             scanLineDirection = _songData.upsideDown ? 1 : -1;
             anchor = new GridViewAnchor(16, 8, _cellSize, new Vector2Int(8, 0), _songData.upsideDown);
             _top = anchor.ToWorldPosition(new Vector2Int(0, 8));
@@ -109,6 +122,16 @@ namespace Cytus2
             BeatingResultView.pool.DespawnAllEntities();
         }
 
+        private void HandleGridPointChange(int point)
+        {
+            onPointChange(point);
+        }
+
+        private void HandleGridComboChange(int combo)
+        {
+            onComboChange(combo);
+        }
+
         public void StartGame()
         {
             if (_playing == false)
@@ -122,6 +145,14 @@ namespace Cytus2
                 _audioSource.Play();
                 _startTime = Time.time - _audioSource.time;
                 Time.timeScale = 1f;
+                if (_audioSource.time == _songData.timeOffset)
+                {
+                    onStart();
+                }
+                else
+                {
+                    onContinue();
+                }
             }
         }
 
@@ -138,6 +169,7 @@ namespace Cytus2
                 _playing = false;
                 _audioSource.Pause();
                 Time.timeScale = 0f;
+                onPause();
             }
         }
 

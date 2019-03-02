@@ -13,6 +13,8 @@ namespace Cytus2
 
         public event Action<int> onComboChange = delegate { };
 
+        public event Action onSongdEnd = delegate { };
+
         public float currentStep { get; private set; }
         public int stepOffset { get; private set; }
         public int combo { get; private set; }
