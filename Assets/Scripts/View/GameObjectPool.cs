@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Cytus2
@@ -6,46 +7,84 @@ namespace Cytus2
     public class GameObjectPool<T>
         where T : IGameObjectPoolEntity
     {
-        private List<T> _allEntities = new List<T>();
-        private Stack<T> _idleEntities = new Stack<T>();
-        private GameObject _prefab;
+        private Dictionary<string, List<T>> _allEntitiesMap = new Dictionary<string, List<T>>();
+        private Dictionary<string, Stack<T>> _idleEntitiesMap = new Dictionary<string, Stack<T>>();
+        private Dictionary<string, GameObject> _prefabMap = new Dictionary<string, GameObject>();
 
-        public GameObjectPool(GameObject prefab)
+        public void AddEntityPrefab(string name, GameObject prefab)
         {
-            _prefab = prefab;
+            _prefabMap[name] = prefab ?? throw new Exception("Invalid prefab");
+            _allEntitiesMap[name] = new List<T>();
+            _idleEntitiesMap[name] = new Stack<T>();
         }
 
-        public T SpawnEntity(Transform parent, bool inWorldSpace)
+        public void AddEntityPrefab(GameObject prefab)
         {
+            AddEntityPrefab("Default", prefab);
+        }
+
+        public T SpawnEntity(string name, Transform parent, bool inWorldSpace = true)
+        {
+            Stack<T> idleEntities = _idleEntitiesMap[name];
             T entity;
-            if (_idleEntities.Count > 0)
+            if (idleEntities.Count > 0)
             {
-                entity = _idleEntities.Pop();
+                entity = idleEntities.Pop();
                 entity.gameObject.transform.SetParent(parent, inWorldSpace);
                 entity.gameObject.SetActive(true);
                 return entity;
             }
             else
             {
-                entity = GameObject.Instantiate(_prefab, parent, inWorldSpace).GetComponent<T>();
-                _allEntities.Add(entity);
+                entity = GameObject.Instantiate(_prefabMap[name], parent, inWorldSpace).GetComponent<T>();
+                _allEntitiesMap[name].Add(entity);
             }
             return entity;
         }
 
-        public void DespawnEntity(T entity)
+        public T SpawnEntity(Transform parent, bool inWorldSpace = true)
+        {
+            return SpawnEntity("Default", parent, inWorldSpace);
+        }
+
+        public void DespawnEntity(string name, T entity)
         {
             entity.gameObject.SetActive(false);
-            _idleEntities.Push(entity);
+            _idleEntitiesMap[name].Push(entity);
+        }
+
+        public void DespawnEntity(T entity)
+        {
+            DespawnEntity("Default", entity);
         }
 
         public void DespawnAllEntities()
         {
-            _idleEntities.Clear();
-            foreach (var entity in _allEntities)
+            foreach (var idleEntities in _idleEntitiesMap.Values)
             {
-                entity.Despawn();
+                idleEntities.Clear();
             }
+            foreach (var allEntities in _allEntitiesMap.Values)
+            {
+                foreach (var entity in allEntities)
+                {
+                    entity.Despawn();
+                }
+                allEntities.Clear();
+            }
+        }
+
+        public void ReleaseAllEntities()
+        {
+            _idleEntitiesMap.Clear();
+            foreach (var allEntities in _allEntitiesMap.Values)
+            {
+                foreach (var entity in allEntities)
+                {
+                    GameObject.Destroy(entity.gameObject);
+                }
+            }
+            _allEntitiesMap.Clear();
         }
     }
 }

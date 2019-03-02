@@ -6,6 +6,8 @@ namespace Cytus2
 {
     public class BeatingResultView : MonoBehaviour, IGameObjectPoolEntity
     {
+        public static GameObjectPool<BeatingResultView> pool { get; private set; } = new GameObjectPool<BeatingResultView>();
+
         [SerializeField]
         private BeatingResultType beatingResult;
 
@@ -33,19 +35,19 @@ namespace Cytus2
             switch (beatingResult)
             {
                 case BeatingResultType.Good:
-                    GridView.instance.goodBeatingViewPool.DespawnEntity(this);
+                    pool.DespawnEntity("Good", this);
                     break;
 
                 case BeatingResultType.Perfect:
-                    GridView.instance.perfectBeatingViewPool.DespawnEntity(this);
+                    pool.DespawnEntity("Perfect", this);
                     break;
 
                 case BeatingResultType.Miss:
-                    GridView.instance.missBeatingViewPool.DespawnEntity(this);
+                    pool.DespawnEntity("Miss", this);
                     break;
 
                 case BeatingResultType.Bad:
-                    GridView.instance.badBeatingViewPool.DespawnEntity(this);
+                    pool.DespawnEntity("Bad", this);
                     break;
 
                 default:

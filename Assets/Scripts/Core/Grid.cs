@@ -65,7 +65,10 @@ namespace Cytus2
             if (combo != this.combo)
             {
                 this.combo = combo;
-                onComboChange(combo);
+                if (combo != 1)
+                {
+                    onComboChange(combo);
+                }
             }
             if (point != this.point)
             {

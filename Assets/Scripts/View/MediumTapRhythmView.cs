@@ -6,6 +6,8 @@ namespace Cytus2
 {
     public class MediumTapRhythmView : MonoBehaviour, IRhythmView, IPointerEnterHandler, IPointerExitHandler, IPointerUpHandler, IPointerDownHandler
     {
+        public static GameObjectPool<MediumTapRhythmView> pool { get; private set; } = new GameObjectPool<MediumTapRhythmView>();
+
         public event Action<IRhythmView> onDestroy;
 
         public Rhythm rhythm { get; private set; }
@@ -49,27 +51,17 @@ namespace Cytus2
 
         public void ShowBeatingResult()
         {
-            BeatingResultView beatingResultView;
+            BeatingResultView beatingResultView = GridUtility.SpawnBeatingResultView(rhythm.beatingResult);
             switch (rhythm.beatingResult)
             {
                 case BeatingResultType.Good:
-                    beatingResultView = GridView.instance.goodBeatingViewPool.SpawnEntity(GridView.instance.beatingResultContainer, false);
-                    beatingResultView.Initialize(new Vector3(GridView.instance.anchor.ToWorldPosition(rhythm.position).x, GridView.instance.scanLinePosition.y));
-                    break;
-
                 case BeatingResultType.Perfect:
-                    beatingResultView = GridView.instance.perfectBeatingViewPool.SpawnEntity(GridView.instance.beatingResultContainer, false);
+                case BeatingResultType.Bad:
                     beatingResultView.Initialize(new Vector3(GridView.instance.anchor.ToWorldPosition(rhythm.position).x, GridView.instance.scanLinePosition.y));
                     break;
 
                 case BeatingResultType.Miss:
-                    beatingResultView = GridView.instance.missBeatingViewPool.SpawnEntity(GridView.instance.beatingResultContainer, false);
                     beatingResultView.Initialize(GridView.instance.anchor.ToWorldPosition(rhythm.position));
-                    break;
-
-                case BeatingResultType.Bad:
-                    beatingResultView = GridView.instance.badBeatingViewPool.SpawnEntity(GridView.instance.beatingResultContainer, false);
-                    beatingResultView.Initialize(new Vector3(GridView.instance.anchor.ToWorldPosition(rhythm.position).x, GridView.instance.scanLinePosition.y));
                     break;
 
                 default:
@@ -136,7 +128,7 @@ namespace Cytus2
 
         public void Despawn()
         {
-            GridView.instance.mediumTapRhythmViewPool.DespawnEntity(this);
+            pool.DespawnEntity(this);
         }
     }
 }

@@ -6,13 +6,15 @@ namespace Cytus2
 {
     public class NoteView : MonoBehaviour, IGameObjectPoolEntity
     {
+        public static GameObjectPool<NoteView> pool { get; private set; } = new GameObjectPool<NoteView>();
+
         public event Action<NoteView> onDestroy;
 
         public Note note { get; private set; }
 
         protected Dictionary<Rhythm, IRhythmView> _rhythmViewMap;
 
-        public virtual void Initialize(Note note)
+        public void Initialize(Note note)
         {
             this.note = note;
             note.onAddRhythm += HandleNoteAddRhythm;
@@ -23,29 +25,29 @@ namespace Cytus2
             onDestroy = delegate { };
         }
 
-        protected virtual void HandleNoteAddRhythm(Rhythm rhythm)
+        private void HandleNoteAddRhythm(Rhythm rhythm)
         {
             IRhythmView rhythmView;
             switch (note.beatingStyle)
             {
                 case BeatingStyleType.ShortTap:
-                    rhythmView = GridView.instance.shortTapRhythmViewPool.SpawnEntity(transform, false);
+                    rhythmView = ShortTapRhythmView.pool.SpawnEntity(transform, false);
                     break;
 
                 case BeatingStyleType.MediumTap:
-                    rhythmView = GridView.instance.mediumTapRhythmViewPool.SpawnEntity(transform, false);
+                    rhythmView = MediumTapRhythmView.pool.SpawnEntity(transform, false);
                     break;
 
                 case BeatingStyleType.LongTap:
-                    rhythmView = GridView.instance.longTapRhythmViewPool.SpawnEntity(transform, false);
+                    rhythmView = LongTapRhythmView.pool.SpawnEntity(transform, false);
                     break;
 
                 case BeatingStyleType.Shake:
-                    rhythmView = GridView.instance.shakeRhythmViewPool.SpawnEntity(transform, false);
+                    rhythmView = ShakeRhythmView.pool.SpawnEntity(transform, false);
                     break;
 
                 case BeatingStyleType.Wave:
-                    rhythmView = GridView.instance.waveRhythmViewPool.SpawnEntity(transform, false);
+                    rhythmView = WaveRhythmView.pool.SpawnEntity(transform, false);
                     break;
 
                 default:
@@ -56,7 +58,7 @@ namespace Cytus2
             _rhythmViewMap[rhythm] = rhythmView;
         }
 
-        protected virtual void HandleRhythmViewDestroy(IRhythmView rhythmView)
+        private void HandleRhythmViewDestroy(IRhythmView rhythmView)
         {
             _rhythmViewMap.Remove(rhythmView.rhythm);
             if (_rhythmViewMap.Count == 0)
@@ -66,12 +68,12 @@ namespace Cytus2
             }
         }
 
-        protected virtual void HandleNoteRemoveRhythm(Rhythm rhythm)
+        private void HandleNoteRemoveRhythm(Rhythm rhythm)
         {
             _rhythmViewMap[rhythm].ShowBeatingResult();
         }
 
-        public virtual void Render(float currentStep)
+        public void Render(float currentStep)
         {
             foreach (var rhythmView in _rhythmViewMap.Values)
             {
@@ -81,7 +83,7 @@ namespace Cytus2
 
         public void Despawn()
         {
-            GridView.instance.noteViewPool.DespawnEntity(this);
+            pool.DespawnEntity(this);
         }
     }
 }

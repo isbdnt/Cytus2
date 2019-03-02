@@ -7,6 +7,8 @@ namespace Cytus2
 {
     public class ShakeRhythmView : MonoBehaviour, IRhythmView, IPointerEnterHandler, IPointerExitHandler, IPointerUpHandler, IPointerDownHandler
     {
+        public static GameObjectPool<ShakeRhythmView> pool { get; private set; } = new GameObjectPool<ShakeRhythmView>();
+
         public event Action<IRhythmView> onDestroy;
 
         public Rhythm rhythm { get; private set; }
@@ -64,28 +66,7 @@ namespace Cytus2
 
         public void ShowBeatingResult()
         {
-            BeatingResultView beatingResultView;
-            switch (rhythm.beatingResult)
-            {
-                case BeatingResultType.Good:
-                    beatingResultView = GridView.instance.goodBeatingViewPool.SpawnEntity(GridView.instance.beatingResultContainer, false);
-                    break;
-
-                case BeatingResultType.Perfect:
-                    beatingResultView = GridView.instance.perfectBeatingViewPool.SpawnEntity(GridView.instance.beatingResultContainer, false);
-                    break;
-
-                case BeatingResultType.Miss:
-                    beatingResultView = GridView.instance.missBeatingViewPool.SpawnEntity(GridView.instance.beatingResultContainer, false);
-                    break;
-
-                case BeatingResultType.Bad:
-                    beatingResultView = GridView.instance.badBeatingViewPool.SpawnEntity(GridView.instance.beatingResultContainer, false);
-                    break;
-
-                default:
-                    throw new Exception();
-            }
+            BeatingResultView beatingResultView = GridUtility.SpawnBeatingResultView(rhythm.beatingResult);
             beatingResultView.Initialize(GridView.instance.anchor.ToWorldPosition(rhythm.position));
             if (rhythm.previous != null)
             {
@@ -210,7 +191,7 @@ namespace Cytus2
 
         public void Despawn()
         {
-            GridView.instance.shakeRhythmViewPool.DespawnEntity(this);
+            pool.DespawnEntity(this);
         }
     }
 }
