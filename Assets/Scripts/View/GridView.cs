@@ -59,9 +59,8 @@ namespace Cytus2
             {
                 GameObject.Destroy(instance.gameObject);
             }
-            var gridView = GameObject.Instantiate(prefab, GameObject.Find("Canvas").transform, false).GetComponent<GridView>();
-            instance = gridView;
-            return gridView;
+            instance = GameObject.Instantiate(prefab, GameObject.Find("Canvas").transform, false).GetComponent<GridView>();
+            return instance;
         }
 
         private void Awake()
