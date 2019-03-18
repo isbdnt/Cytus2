@@ -74,7 +74,7 @@ namespace Cytus2
             }
         }
 
-        public void ReleaseAllEntities()
+        public void Clear()
         {
             _idleEntitiesMap.Clear();
             foreach (var allEntities in _allEntitiesMap.Values)
@@ -85,6 +85,7 @@ namespace Cytus2
                 }
             }
             _allEntitiesMap.Clear();
+            _prefabMap.Clear();
         }
     }
 }

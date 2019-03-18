@@ -15,14 +15,15 @@ namespace Cytus2
             if (instance != null)
             {
                 instance.songDataMap.Clear();
+                GameObject.Destroy(GridView.instance);
                 GridView.prefab = null;
-                NoteView.pool.ReleaseAllEntities();
-                ShortTapRhythmView.pool.ReleaseAllEntities();
-                MediumTapRhythmView.pool.ReleaseAllEntities();
-                LongTapRhythmView.pool.ReleaseAllEntities();
-                ShakeRhythmView.pool.ReleaseAllEntities();
-                WaveRhythmView.pool.ReleaseAllEntities();
-                BeatingResultView.pool.ReleaseAllEntities();
+                NoteView.pool.Clear();
+                ShortTapRhythmView.pool.Clear();
+                MediumTapRhythmView.pool.Clear();
+                LongTapRhythmView.pool.Clear();
+                ShakeRhythmView.pool.Clear();
+                WaveRhythmView.pool.Clear();
+                BeatingResultView.pool.Clear();
                 Resources.UnloadUnusedAssets();
             }
             instance = new ResourceManager();

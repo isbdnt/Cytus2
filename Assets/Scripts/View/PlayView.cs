@@ -24,20 +24,20 @@ namespace Cytus2
 
         private void Start()
         {
-            _startButton.gameObject.SetActive(true);
             _startButton.onClick.AddListener(HandleStartClick);
-            _pauseButton.gameObject.SetActive(false);
             _pauseButton.onClick.AddListener(HandlePauseClick);
             _restartButton.onClick.AddListener(HandleRestartClick);
             _reloadConfigButton.onClick.AddListener(HandleReloadConfigClick);
             BindGridEvents();
+            HandleGridPause();
         }
 
         private void BindGridEvents()
         {
             GridView.instance.onPointChange += HandleGridPointChange;
             GridView.instance.onComboChange += HandleGridComboChange;
-            GridView.instance.onStart += HandleGridStart;
+            GridView.instance.onStart += HandleGridPlay;
+            GridView.instance.onContinue += HandleGridPlay;
             GridView.instance.onPause += HandleGridPause;
         }
 
@@ -60,9 +60,10 @@ namespace Cytus2
         {
             Main.TestOneWayLove();
             BindGridEvents();
+            HandleGridPause();
         }
 
-        private void HandleGridStart()
+        private void HandleGridPlay()
         {
             _startButton.gameObject.SetActive(false);
             _pauseButton.gameObject.SetActive(true);
