@@ -6,7 +6,7 @@ namespace Cytus2
 {
     public class BeatingResultView : MonoBehaviour, IGameObjectPoolEntity
     {
-        public static GameObjectPool<BeatingResultView> pool { get; private set; } = new GameObjectPool<BeatingResultView>();
+        public static GameObjectPool<BeatingResultView> pool { get; } = new GameObjectPool<BeatingResultView>();
 
         [SerializeField]
         private BeatingResultType beatingResult;

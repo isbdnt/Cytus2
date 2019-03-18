@@ -6,7 +6,7 @@ namespace Cytus2
 {
     public class WaveRhythmView : MonoBehaviour, IRhythmView, IDragHandler
     {
-        public static GameObjectPool<WaveRhythmView> pool { get; private set; } = new GameObjectPool<WaveRhythmView>();
+        public static GameObjectPool<WaveRhythmView> pool { get; } = new GameObjectPool<WaveRhythmView>();
 
         public event Action<IRhythmView> onDestroy;
 

@@ -6,7 +6,7 @@ namespace Cytus2
 {
     public class LongTapRhythmView : MonoBehaviour, IRhythmView, IPointerEnterHandler, IPointerExitHandler, IPointerUpHandler, IPointerDownHandler
     {
-        public static GameObjectPool<LongTapRhythmView> pool { get; private set; } = new GameObjectPool<LongTapRhythmView>();
+        public static GameObjectPool<LongTapRhythmView> pool { get; } = new GameObjectPool<LongTapRhythmView>();
 
         public event Action<IRhythmView> onDestroy;
 

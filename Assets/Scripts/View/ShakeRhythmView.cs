@@ -7,7 +7,7 @@ namespace Cytus2
 {
     public class ShakeRhythmView : MonoBehaviour, IRhythmView, IPointerEnterHandler, IPointerExitHandler, IPointerUpHandler, IPointerDownHandler
     {
-        public static GameObjectPool<ShakeRhythmView> pool { get; private set; } = new GameObjectPool<ShakeRhythmView>();
+        public static GameObjectPool<ShakeRhythmView> pool { get; } = new GameObjectPool<ShakeRhythmView>();
 
         public event Action<IRhythmView> onDestroy;
 

@@ -6,7 +6,7 @@ namespace Cytus2
 {
     public class NoteView : MonoBehaviour, IGameObjectPoolEntity
     {
-        public static GameObjectPool<NoteView> pool { get; private set; } = new GameObjectPool<NoteView>();
+        public static GameObjectPool<NoteView> pool { get; } = new GameObjectPool<NoteView>();
 
         public event Action<NoteView> onDestroy;
 

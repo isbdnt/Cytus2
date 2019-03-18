@@ -6,7 +6,7 @@ namespace Cytus2
 {
     public class ShortTapRhythmView : MonoBehaviour, IRhythmView, IPointerDownHandler
     {
-        public static GameObjectPool<ShortTapRhythmView> pool { get; private set; } = new GameObjectPool<ShortTapRhythmView>();
+        public static GameObjectPool<ShortTapRhythmView> pool { get; } = new GameObjectPool<ShortTapRhythmView>();
 
         public event Action<IRhythmView> onDestroy;
 
