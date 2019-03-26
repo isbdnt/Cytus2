@@ -11,6 +11,11 @@ namespace Cytus2
         private Dictionary<string, Stack<T>> _idleEntitiesMap = new Dictionary<string, Stack<T>>();
         private Dictionary<string, GameObject> _prefabMap = new Dictionary<string, GameObject>();
 
+        public bool HasEntityPrefab(string name)
+        {
+            return _prefabMap.ContainsKey(name);
+        }
+
         public void AddEntityPrefab(string name, GameObject prefab)
         {
             _prefabMap[name] = prefab ?? throw new Exception("Invalid prefab");
@@ -70,6 +75,17 @@ namespace Cytus2
                 {
                     entity.Despawn();
                 }
+            }
+        }
+
+        public void ReleaseAllEntities()
+        {
+            foreach (var idleEntities in _idleEntitiesMap.Values)
+            {
+                idleEntities.Clear();
+            }
+            foreach (var allEntities in _allEntitiesMap.Values)
+            {
                 allEntities.Clear();
             }
         }
@@ -77,13 +93,6 @@ namespace Cytus2
         public void Clear()
         {
             _idleEntitiesMap.Clear();
-            foreach (var allEntities in _allEntitiesMap.Values)
-            {
-                foreach (var entity in allEntities)
-                {
-                    GameObject.Destroy(entity.gameObject);
-                }
-            }
             _allEntitiesMap.Clear();
             _prefabMap.Clear();
         }

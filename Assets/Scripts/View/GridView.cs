@@ -222,5 +222,16 @@ namespace Cytus2
         private void HandleGridRemoveNote(Note note)
         {
         }
+
+        private void OnDestroy()
+        {
+            NoteView.pool.ReleaseAllEntities();
+            ShortTapRhythmView.pool.ReleaseAllEntities();
+            MediumTapRhythmView.pool.ReleaseAllEntities();
+            LongTapRhythmView.pool.ReleaseAllEntities();
+            ShakeRhythmView.pool.ReleaseAllEntities();
+            WaveRhythmView.pool.ReleaseAllEntities();
+            BeatingResultView.pool.ReleaseAllEntities();
+        }
     }
 }

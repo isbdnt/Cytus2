@@ -15,7 +15,6 @@ namespace Cytus2
             if (instance != null)
             {
                 instance.songDataMap.Clear();
-                GameObject.Destroy(GridView.instance);
                 GridView.prefab = null;
                 NoteView.pool.Clear();
                 ShortTapRhythmView.pool.Clear();
