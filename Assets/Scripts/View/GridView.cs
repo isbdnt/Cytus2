@@ -225,6 +225,10 @@ namespace Cytus2
 
         private void OnDestroy()
         {
+            _grid.onAddNote -= HandleGridAddNote;
+            _grid.onRemoveNote -= HandleGridRemoveNote;
+            _grid.onPointChange -= HandleGridPointChange;
+            _grid.onComboChange -= HandleGridComboChange;
             NoteView.pool.ReleaseAllEntities();
             ShortTapRhythmView.pool.ReleaseAllEntities();
             MediumTapRhythmView.pool.ReleaseAllEntities();

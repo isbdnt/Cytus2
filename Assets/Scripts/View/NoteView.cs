@@ -83,6 +83,8 @@ namespace Cytus2
 
         public void Despawn()
         {
+            note.onAddRhythm -= HandleNoteAddRhythm;
+            note.onRemoveRhythm -= HandleNoteRemoveRhythm;
             pool.DespawnEntity(this);
         }
     }
