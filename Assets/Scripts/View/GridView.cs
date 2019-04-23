@@ -135,7 +135,7 @@ namespace Cytus2
         {
             if (_playing == false)
             {
-                if (Time.time + _songData.timeOffset >= _audioSource.clip.length)
+                if (Time.time - _startTime >= _audioSource.clip.length)
                 {
                     ResetState();
                 }
