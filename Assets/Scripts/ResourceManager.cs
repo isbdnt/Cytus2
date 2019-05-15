@@ -17,11 +17,11 @@ namespace Cytus2
                 instance.songDataMap.Clear();
                 GridView.prefab = null;
                 NoteView.pool.Clear();
-                ShortTapRhythmView.pool.Clear();
-                MediumTapRhythmView.pool.Clear();
-                LongTapRhythmView.pool.Clear();
-                ShakeRhythmView.pool.Clear();
-                WaveRhythmView.pool.Clear();
+                ClickPieceView.pool.Clear();
+                HoldPieceView.pool.Clear();
+                SpecialHoldPieceView.pool.Clear();
+                DragPieceView.pool.Clear();
+                FlickPieceView.pool.Clear();
                 BeatingResultView.pool.Clear();
                 Resources.UnloadUnusedAssets();
             }
@@ -38,7 +38,7 @@ namespace Cytus2
         private void LoadSong(string name)
         {
             var song = JsonConvert.DeserializeObject<SongData>(Resources.Load<TextAsset>($"Songs/{name}/Config").text);
-            song.audioClip = Resources.Load<AudioClip>($"Songs/{name}/AudioClip");
+            song.audioClip = Resources.Load<AudioClip>($"Songs/{name}/Soundtrack");
             songDataMap[song.id] = song;
         }
 
@@ -46,11 +46,11 @@ namespace Cytus2
         {
             GridView.prefab = Resources.Load<GameObject>("Prefabs/Grid");
             NoteView.pool.AddEntityPrefab(Resources.Load<GameObject>("Prefabs/Note"));
-            ShortTapRhythmView.pool.AddEntityPrefab(Resources.Load<GameObject>("Prefabs/ShortTapRhythm"));
-            MediumTapRhythmView.pool.AddEntityPrefab(Resources.Load<GameObject>("Prefabs/MediumTapRhythm"));
-            LongTapRhythmView.pool.AddEntityPrefab(Resources.Load<GameObject>("Prefabs/LongTapRhythm"));
-            ShakeRhythmView.pool.AddEntityPrefab(Resources.Load<GameObject>("Prefabs/ShakeRhythm"));
-            WaveRhythmView.pool.AddEntityPrefab(Resources.Load<GameObject>("Prefabs/WaveRhythm"));
+            ClickPieceView.pool.AddEntityPrefab(Resources.Load<GameObject>("Prefabs/ClickPiece"));
+            HoldPieceView.pool.AddEntityPrefab(Resources.Load<GameObject>("Prefabs/HoldPiece"));
+            SpecialHoldPieceView.pool.AddEntityPrefab(Resources.Load<GameObject>("Prefabs/SpecialHoldPiece"));
+            DragPieceView.pool.AddEntityPrefab(Resources.Load<GameObject>("Prefabs/DragPiece"));
+            FlickPieceView.pool.AddEntityPrefab(Resources.Load<GameObject>("Prefabs/FlickPiece"));
             BeatingResultView.pool.AddEntityPrefab("Good", Resources.Load<GameObject>("Prefabs/GoodBeating"));
             BeatingResultView.pool.AddEntityPrefab("Perfect", Resources.Load<GameObject>("Prefabs/PerfectBeating"));
             BeatingResultView.pool.AddEntityPrefab("Miss", Resources.Load<GameObject>("Prefabs/MissBeating"));

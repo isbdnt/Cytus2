@@ -7,14 +7,14 @@ namespace Cytus2
         public int direction { get; private set; }
         private Vector3 _pivot;
         private Vector2Int _origin;
-        private int _cellSize;
+        private float _cellSize;
 
         public GridViewAnchor(int width, int height, int cellSize, Vector2Int origin, bool upsideDown = false)
         {
             direction = upsideDown ? -1 : 1;
-            _pivot = new Vector3(Screen.width, Screen.height) / 2f - new Vector3(width, height * direction) / 2f * cellSize;
+            _cellSize = cellSize * Screen.height / 1080f;
+            _pivot = new Vector3(Screen.width, Screen.height) / 2f - new Vector3(width, height * direction) / 2f * _cellSize;
             _origin = origin;
-            _cellSize = cellSize;
         }
 
         public Vector2Int ToGridPosition(Vector3 realPos)

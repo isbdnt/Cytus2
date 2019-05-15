@@ -58,9 +58,11 @@ namespace Cytus2
 
         private void HandleReloadConfigClick()
         {
-            Main.TestOneWayLove();
+            ResourceManager.NewInstance();
+            GridView.NewInstance();
             BindGridEvents();
             HandleGridPause();
+            GridView.instance.StartGame();
         }
 
         private void HandleGridPlay()

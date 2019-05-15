@@ -1,10 +1,9 @@
 {
     "id": 1,
     "name": "One Way Love",
-    "filepath": "AudioClips/OneWayLove",
     "bpm": 90,
     "beatUnit": 4,
-    "timeOffset": 0.28,
+    "timeOffset": 0,
     "upsideDown": false,
     "charts": [
         {
@@ -13,7 +12,7 @@
             "beatUnit": 2,
             "notes": [
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -8
@@ -22,7 +21,7 @@
                     "stepOffset": 16
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 8
@@ -31,7 +30,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 4
@@ -40,7 +39,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -4
@@ -49,7 +48,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 8
@@ -58,7 +57,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -8
@@ -67,7 +66,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -6
@@ -76,7 +75,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 6
@@ -85,7 +84,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "Shake",
+                    "beatingStyle": "Drag",
                     "rhythms": [
                         {
                             "positionX": 4,
@@ -103,7 +102,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "MediumTap",
+                    "beatingStyle": "Hold",
                     "rhythms": [
                         {
                             "positionX": -2,
@@ -113,7 +112,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 8
@@ -122,7 +121,7 @@
                     "stepOffset": 6
                 },
                 {
-                    "beatingStyle": "Shake",
+                    "beatingStyle": "Drag",
                     "rhythms": [
                         {
                             "positionX": -4,
@@ -140,7 +139,7 @@
                     "stepOffset": 6
                 },
                 {
-                    "beatingStyle": "MediumTap",
+                    "beatingStyle": "Hold",
                     "rhythms": [
                         {
                             "positionX": 2,
@@ -150,7 +149,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -8
@@ -159,7 +158,7 @@
                     "stepOffset": 6
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 4
@@ -168,7 +167,7 @@
                     "stepOffset": 6
                 },
                 {
-                    "beatingStyle": "LongTap",
+                    "beatingStyle": "SpecialHold",
                     "rhythms": [
                         {
                             "positionX": -2,
@@ -178,7 +177,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 8
@@ -187,7 +186,7 @@
                     "stepOffset": 36
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 4
@@ -196,7 +195,7 @@
                     "stepOffset": 6
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 0
@@ -205,7 +204,7 @@
                     "stepOffset": 6
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -4
@@ -214,7 +213,7 @@
                     "stepOffset": 6
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -8
@@ -223,7 +222,7 @@
                     "stepOffset": 6
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 8
@@ -232,7 +231,7 @@
                     "stepOffset": 0
                 },
                 {
-                    "beatingStyle": "MediumTap",
+                    "beatingStyle": "Hold",
                     "rhythms": [
                         {
                             "positionX": 6,
@@ -242,7 +241,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "MediumTap",
+                    "beatingStyle": "Hold",
                     "rhythms": [
                         {
                             "positionX": -6,
@@ -252,7 +251,7 @@
                     "stepOffset": 0
                 },
                 {
-                    "beatingStyle": "Shake",
+                    "beatingStyle": "Drag",
                     "rhythms": [
                         {
                             "positionX": -6,
@@ -266,7 +265,7 @@
                     "stepOffset": 12
                 },
                 {
-                    "beatingStyle": "Shake",
+                    "beatingStyle": "Drag",
                     "rhythms": [
                         {
                             "positionX": 0,
@@ -280,7 +279,7 @@
                     "stepOffset": 14
                 },
                 {
-                    "beatingStyle": "MediumTap",
+                    "beatingStyle": "Hold",
                     "rhythms": [
                         {
                             "positionX": 3,
@@ -290,7 +289,7 @@
                     "stepOffset": 6
                 },
                 {
-                    "beatingStyle": "MediumTap",
+                    "beatingStyle": "Hold",
                     "rhythms": [
                         {
                             "positionX": -3,
@@ -300,7 +299,7 @@
                     "stepOffset": 0
                 },
                 {
-                    "beatingStyle": "Shake",
+                    "beatingStyle": "Drag",
                     "rhythms": [
                         {
                             "positionX": 6,
@@ -314,7 +313,7 @@
                     "stepOffset": 12
                 },
                 {
-                    "beatingStyle": "Shake",
+                    "beatingStyle": "Drag",
                     "rhythms": [
                         {
                             "positionX": 0,
@@ -328,7 +327,7 @@
                     "stepOffset": 14
                 },
                 {
-                    "beatingStyle": "MediumTap",
+                    "beatingStyle": "Hold",
                     "rhythms": [
                         {
                             "positionX": -8,
@@ -338,7 +337,7 @@
                     "stepOffset": 6
                 },
                 {
-                    "beatingStyle": "Shake",
+                    "beatingStyle": "Drag",
                     "rhythms": [
                         {
                             "positionX": 8,
@@ -352,7 +351,7 @@
                     "stepOffset": 12
                 },
                 {
-                    "beatingStyle": "MediumTap",
+                    "beatingStyle": "Hold",
                     "rhythms": [
                         {
                             "positionX": -5,
@@ -362,7 +361,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -3
@@ -371,7 +370,7 @@
                     "stepOffset": 16
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 3
@@ -380,7 +379,7 @@
                     "stepOffset": 0
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -2
@@ -389,7 +388,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "MediumTap",
+                    "beatingStyle": "Hold",
                     "rhythms": [
                         {
                             "positionX": 2,
@@ -399,7 +398,7 @@
                     "stepOffset": 2
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -7
@@ -408,7 +407,7 @@
                     "stepOffset": 26
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 7
@@ -417,7 +416,7 @@
                     "stepOffset": 0
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 5
@@ -426,7 +425,7 @@
                     "stepOffset": 6
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -5
@@ -435,7 +434,7 @@
                     "stepOffset": 2
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 5
@@ -444,7 +443,7 @@
                     "stepOffset": 2
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -5
@@ -453,7 +452,7 @@
                     "stepOffset": 2
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 5
@@ -462,7 +461,7 @@
                     "stepOffset": 2
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -2
@@ -471,7 +470,7 @@
                     "stepOffset": 2
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 2
@@ -480,7 +479,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -2
@@ -489,7 +488,7 @@
                     "stepOffset": 2
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -2
@@ -498,7 +497,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 2
@@ -507,7 +506,7 @@
                     "stepOffset": 2
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -8
@@ -516,7 +515,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -8
@@ -525,7 +524,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "LongTap",
+                    "beatingStyle": "SpecialHold",
                     "rhythms": [
                         {
                             "positionX": 8,
@@ -535,7 +534,7 @@
                     "stepOffset": 2
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -8
@@ -544,7 +543,7 @@
                     "stepOffset": 6
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -2
@@ -553,7 +552,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -2
@@ -562,7 +561,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "MediumTap",
+                    "beatingStyle": "Hold",
                     "rhythms": [
                         {
                             "positionX": -7,
@@ -572,7 +571,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 5
@@ -581,7 +580,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 5
@@ -590,7 +589,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "Shake",
+                    "beatingStyle": "Drag",
                     "rhythms": [
                         {
                             "positionX": 3,
@@ -604,7 +603,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -3
@@ -613,7 +612,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -3
@@ -622,7 +621,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 3
@@ -631,7 +630,7 @@
                     "stepOffset": 0
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -5
@@ -640,7 +639,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "MediumTap",
+                    "beatingStyle": "Hold",
                     "rhythms": [
                         {
                             "positionX": 7,
@@ -650,7 +649,7 @@
                     "stepOffset": 0
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -5
@@ -659,7 +658,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -5
@@ -668,7 +667,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -5
@@ -677,7 +676,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -2
@@ -686,7 +685,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 2
@@ -695,7 +694,7 @@
                     "stepOffset": 0
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 2
@@ -704,7 +703,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -2
@@ -713,7 +712,7 @@
                     "stepOffset": 2
                 },
                 {
-                    "beatingStyle": "Shake",
+                    "beatingStyle": "Drag",
                     "rhythms": [
                         {
                             "positionX": 2,
@@ -731,7 +730,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "MediumTap",
+                    "beatingStyle": "Hold",
                     "rhythms": [
                         {
                             "positionX": -8,
@@ -741,7 +740,7 @@
                     "stepOffset": 6
                 },
                 {
-                    "beatingStyle": "MediumTap",
+                    "beatingStyle": "Hold",
                     "rhythms": [
                         {
                             "positionX": 8,
@@ -751,7 +750,7 @@
                     "stepOffset": 6
                 },
                 {
-                    "beatingStyle": "LongTap",
+                    "beatingStyle": "SpecialHold",
                     "rhythms": [
                         {
                             "positionX": -5,
@@ -761,7 +760,7 @@
                     "stepOffset": 6
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 3
@@ -770,7 +769,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 3
@@ -779,7 +778,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 0
@@ -788,7 +787,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 6
@@ -797,7 +796,7 @@
                     "stepOffset": 0
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 0
@@ -806,7 +805,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 6
@@ -815,7 +814,7 @@
                     "stepOffset": 0
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -3
@@ -824,7 +823,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 3
@@ -833,7 +832,7 @@
                     "stepOffset": 0
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -3
@@ -842,7 +841,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 3
@@ -851,7 +850,7 @@
                     "stepOffset": 0
                 },
                 {
-                    "beatingStyle": "MediumTap",
+                    "beatingStyle": "Hold",
                     "rhythms": [
                         {
                             "positionX": 8,
@@ -861,7 +860,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "MediumTap",
+                    "beatingStyle": "Hold",
                     "rhythms": [
                         {
                             "positionX": -8,
@@ -871,7 +870,7 @@
                     "stepOffset": 6
                 },
                 {
-                    "beatingStyle": "LongTap",
+                    "beatingStyle": "SpecialHold",
                     "rhythms": [
                         {
                             "positionX": 5,
@@ -881,7 +880,7 @@
                     "stepOffset": 6
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -3
@@ -890,7 +889,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -3
@@ -899,7 +898,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 0
@@ -908,7 +907,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -6
@@ -917,7 +916,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 0
@@ -926,7 +925,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 0
@@ -935,7 +934,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -6
@@ -944,7 +943,7 @@
                     "stepOffset": 0
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 3
@@ -953,7 +952,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -3
@@ -962,7 +961,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 3
@@ -971,7 +970,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 3
@@ -980,7 +979,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -3
@@ -989,7 +988,7 @@
                     "stepOffset": 0
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -6
@@ -998,7 +997,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 8
@@ -1007,7 +1006,7 @@
                     "stepOffset": 0
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -8
@@ -1016,7 +1015,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 6
@@ -1025,7 +1024,7 @@
                     "stepOffset": 0
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -6
@@ -1034,7 +1033,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 8
@@ -1043,7 +1042,7 @@
                     "stepOffset": 0
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -8
@@ -1052,7 +1051,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 6
@@ -1061,7 +1060,7 @@
                     "stepOffset": 0
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 2
@@ -1070,7 +1069,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -2
@@ -1079,7 +1078,7 @@
                     "stepOffset": 2
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 2
@@ -1088,7 +1087,7 @@
                     "stepOffset": 2
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -2
@@ -1097,7 +1096,7 @@
                     "stepOffset": 2
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 2
@@ -1106,7 +1105,7 @@
                     "stepOffset": 2
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -2
@@ -1115,7 +1114,7 @@
                     "stepOffset": 2
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 2
@@ -1124,7 +1123,7 @@
                     "stepOffset": 2
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -2
@@ -1133,7 +1132,7 @@
                     "stepOffset": 2
                 },
                 {
-                    "beatingStyle": "MediumTap",
+                    "beatingStyle": "Hold",
                     "rhythms": [
                         {
                             "positionX": -6,
@@ -1143,7 +1142,7 @@
                     "stepOffset": 2
                 },
                 {
-                    "beatingStyle": "MediumTap",
+                    "beatingStyle": "Hold",
                     "rhythms": [
                         {
                             "positionX": 6,
@@ -1153,7 +1152,7 @@
                     "stepOffset": 0
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -6
@@ -1162,7 +1161,7 @@
                     "stepOffset": 12
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 6
@@ -1171,7 +1170,7 @@
                     "stepOffset": 0
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -6
@@ -1180,7 +1179,7 @@
                     "stepOffset": 2
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 6
@@ -1189,7 +1188,7 @@
                     "stepOffset": 0
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -2
@@ -1198,7 +1197,7 @@
                     "stepOffset": 14
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 6
@@ -1207,7 +1206,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -6
@@ -1216,7 +1215,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -8
@@ -1225,7 +1224,7 @@
                     "stepOffset": 6
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 8
@@ -1234,7 +1233,7 @@
                     "stepOffset": 0
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 2
@@ -1243,7 +1242,7 @@
                     "stepOffset": 10
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -2
@@ -1252,7 +1251,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "MediumTap",
+                    "beatingStyle": "Hold",
                     "rhythms": [
                         {
                             "positionX": 8,
@@ -1262,7 +1261,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "MediumTap",
+                    "beatingStyle": "Hold",
                     "rhythms": [
                         {
                             "positionX": -8,
@@ -1272,7 +1271,7 @@
                     "stepOffset": 6
                 },
                 {
-                    "beatingStyle": "LongTap",
+                    "beatingStyle": "SpecialHold",
                     "rhythms": [
                         {
                             "positionX": 5,
@@ -1282,7 +1281,7 @@
                     "stepOffset": 6
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -2
@@ -1291,7 +1290,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -2
@@ -1300,7 +1299,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 2
@@ -1309,7 +1308,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "MediumTap",
+                    "beatingStyle": "Hold",
                     "rhythms": [
                         {
                             "positionX": -8,
@@ -1319,7 +1318,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "MediumTap",
+                    "beatingStyle": "Hold",
                     "rhythms": [
                         {
                             "positionX": 8,
@@ -1329,7 +1328,7 @@
                     "stepOffset": 6
                 },
                 {
-                    "beatingStyle": "LongTap",
+                    "beatingStyle": "SpecialHold",
                     "rhythms": [
                         {
                             "positionX": -5,
@@ -1339,7 +1338,7 @@
                     "stepOffset": 6
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 2
@@ -1348,7 +1347,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 2
@@ -1357,7 +1356,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -2
@@ -1366,7 +1365,7 @@
                     "stepOffset": 2
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 2
@@ -1375,7 +1374,7 @@
                     "stepOffset": 2
                 },
                 {
-                    "beatingStyle": "Shake",
+                    "beatingStyle": "Drag",
                     "rhythms": [
                         {
                             "positionX": -7,
@@ -1401,7 +1400,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 6
@@ -1410,7 +1409,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 6
@@ -1419,7 +1418,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -2
@@ -1428,7 +1427,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -2
@@ -1437,7 +1436,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 2
@@ -1446,7 +1445,7 @@
                     "stepOffset": 2
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -2
@@ -1455,7 +1454,7 @@
                     "stepOffset": 2
                 },
                 {
-                    "beatingStyle": "Shake",
+                    "beatingStyle": "Drag",
                     "rhythms": [
                         {
                             "positionX": 7,
@@ -1481,7 +1480,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -6
@@ -1490,7 +1489,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -6
@@ -1499,7 +1498,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 2
@@ -1508,7 +1507,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 2
@@ -1517,7 +1516,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -2
@@ -1526,7 +1525,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "Shake",
+                    "beatingStyle": "Drag",
                     "rhythms": [
                         {
                             "positionX": 4,
@@ -1548,7 +1547,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "Shake",
+                    "beatingStyle": "Drag",
                     "rhythms": [
                         {
                             "positionX": -3,
@@ -1570,7 +1569,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "Shake",
+                    "beatingStyle": "Drag",
                     "rhythms": [
                         {
                             "positionX": 6,
@@ -1592,7 +1591,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "Shake",
+                    "beatingStyle": "Drag",
                     "rhythms": [
                         {
                             "positionX": -7,
@@ -1614,7 +1613,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "Shake",
+                    "beatingStyle": "Drag",
                     "rhythms": [
                         {
                             "positionX": 4,
@@ -1636,7 +1635,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "Shake",
+                    "beatingStyle": "Drag",
                     "rhythms": [
                         {
                             "positionX": -5,
@@ -1658,7 +1657,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "Shake",
+                    "beatingStyle": "Drag",
                     "rhythms": [
                         {
                             "positionX": 2,
@@ -1680,7 +1679,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "Shake",
+                    "beatingStyle": "Drag",
                     "rhythms": [
                         {
                             "positionX": -1,
@@ -1702,7 +1701,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "Shake",
+                    "beatingStyle": "Drag",
                     "rhythms": [
                         {
                             "positionX": 7,
@@ -1728,7 +1727,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -6
@@ -1737,7 +1736,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -6
@@ -1746,7 +1745,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 2
@@ -1755,7 +1754,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -2
@@ -1764,7 +1763,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -7
@@ -1773,7 +1772,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 5
@@ -1782,7 +1781,7 @@
                     "stepOffset": 0
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -6
@@ -1791,7 +1790,7 @@
                     "stepOffset": 6
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 6
@@ -1800,7 +1799,7 @@
                     "stepOffset": 0
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -5
@@ -1809,7 +1808,7 @@
                     "stepOffset": 6
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 7
@@ -1818,7 +1817,7 @@
                     "stepOffset": 0
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -3
@@ -1827,7 +1826,7 @@
                     "stepOffset": 10
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 3
@@ -1836,7 +1835,7 @@
                     "stepOffset": 2
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -3
@@ -1845,7 +1844,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "LongTap",
+                    "beatingStyle": "SpecialHold",
                     "rhythms": [
                         {
                             "positionX": 0,
@@ -1855,7 +1854,7 @@
                     "stepOffset": 2
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -3
@@ -1864,7 +1863,7 @@
                     "stepOffset": 66
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 3
@@ -1873,7 +1872,7 @@
                     "stepOffset": 0
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 1
@@ -1882,7 +1881,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -1
@@ -1891,7 +1890,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -5
@@ -1900,7 +1899,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 5
@@ -1909,7 +1908,7 @@
                     "stepOffset": 0
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 7
@@ -1918,7 +1917,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -7
@@ -1927,7 +1926,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 3
@@ -1936,7 +1935,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -3
@@ -1945,7 +1944,7 @@
                     "stepOffset": 2
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 3
@@ -1954,7 +1953,7 @@
                     "stepOffset": 2
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -3
@@ -1963,7 +1962,7 @@
                     "stepOffset": 2
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 3
@@ -1972,7 +1971,7 @@
                     "stepOffset": 2
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -3
@@ -1981,7 +1980,7 @@
                     "stepOffset": 2
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 3
@@ -1990,7 +1989,7 @@
                     "stepOffset": 2
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -3
@@ -1999,7 +1998,7 @@
                     "stepOffset": 2
                 },
                 {
-                    "beatingStyle": "MediumTap",
+                    "beatingStyle": "Hold",
                     "rhythms": [
                         {
                             "positionX": 0,
@@ -2009,7 +2008,7 @@
                     "stepOffset": 2
                 },
                 {
-                    "beatingStyle": "MediumTap",
+                    "beatingStyle": "Hold",
                     "rhythms": [
                         {
                             "positionX": -8,
@@ -2019,7 +2018,7 @@
                     "stepOffset": 16
                 },
                 {
-                    "beatingStyle": "MediumTap",
+                    "beatingStyle": "Hold",
                     "rhythms": [
                         {
                             "positionX": 8,
@@ -2029,7 +2028,7 @@
                     "stepOffset": 6
                 },
                 {
-                    "beatingStyle": "LongTap",
+                    "beatingStyle": "SpecialHold",
                     "rhythms": [
                         {
                             "positionX": -5,
@@ -2039,7 +2038,7 @@
                     "stepOffset": 6
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 2
@@ -2048,7 +2047,7 @@
                     "stepOffset": 12
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -2
@@ -2057,7 +2056,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "MediumTap",
+                    "beatingStyle": "Hold",
                     "rhythms": [
                         {
                             "positionX": 8,
@@ -2067,7 +2066,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "MediumTap",
+                    "beatingStyle": "Hold",
                     "rhythms": [
                         {
                             "positionX": -8,
@@ -2077,7 +2076,7 @@
                     "stepOffset": 6
                 },
                 {
-                    "beatingStyle": "LongTap",
+                    "beatingStyle": "SpecialHold",
                     "rhythms": [
                         {
                             "positionX": 5,
@@ -2087,7 +2086,7 @@
                     "stepOffset": 6
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -2
@@ -2096,7 +2095,7 @@
                     "stepOffset": 12
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 2
@@ -2105,7 +2104,7 @@
                     "stepOffset": 2
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -2
@@ -2114,7 +2113,7 @@
                     "stepOffset": 2
                 },
                 {
-                    "beatingStyle": "Shake",
+                    "beatingStyle": "Drag",
                     "rhythms": [
                         {
                             "positionX": 7,
@@ -2140,7 +2139,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 2
@@ -2149,7 +2148,7 @@
                     "stepOffset": 24
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -2
@@ -2158,7 +2157,7 @@
                     "stepOffset": 2
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 2
@@ -2167,7 +2166,7 @@
                     "stepOffset": 2
                 },
                 {
-                    "beatingStyle": "Shake",
+                    "beatingStyle": "Drag",
                     "rhythms": [
                         {
                             "positionX": -7,
@@ -2193,7 +2192,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "MediumTap",
+                    "beatingStyle": "Hold",
                     "rhythms": [
                         {
                             "positionX": 7,
@@ -2203,7 +2202,7 @@
                     "stepOffset": 0
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -2
@@ -2212,7 +2211,7 @@
                     "stepOffset": 24
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 2
@@ -2221,7 +2220,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "Shake",
+                    "beatingStyle": "Drag",
                     "rhythms": [
                         {
                             "positionX": -4,
@@ -2243,7 +2242,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "Shake",
+                    "beatingStyle": "Drag",
                     "rhythms": [
                         {
                             "positionX": 3,
@@ -2265,7 +2264,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "Shake",
+                    "beatingStyle": "Drag",
                     "rhythms": [
                         {
                             "positionX": -6,
@@ -2287,7 +2286,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "Shake",
+                    "beatingStyle": "Drag",
                     "rhythms": [
                         {
                             "positionX": 7,
@@ -2309,7 +2308,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "Shake",
+                    "beatingStyle": "Drag",
                     "rhythms": [
                         {
                             "positionX": -4,
@@ -2331,7 +2330,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "Shake",
+                    "beatingStyle": "Drag",
                     "rhythms": [
                         {
                             "positionX": 5,
@@ -2353,7 +2352,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "Shake",
+                    "beatingStyle": "Drag",
                     "rhythms": [
                         {
                             "positionX": -2,
@@ -2375,7 +2374,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "Shake",
+                    "beatingStyle": "Drag",
                     "rhythms": [
                         {
                             "positionX": 1,
@@ -2397,7 +2396,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "Shake",
+                    "beatingStyle": "Drag",
                     "rhythms": [
                         {
                             "positionX": -7,
@@ -2423,7 +2422,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 6
@@ -2432,7 +2431,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 6
@@ -2441,7 +2440,7 @@
                     "stepOffset": 8
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 2
@@ -2450,7 +2449,7 @@
                     "stepOffset": 16
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -5
@@ -2459,7 +2458,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 7
@@ -2468,7 +2467,7 @@
                     "stepOffset": 0
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -6
@@ -2477,7 +2476,7 @@
                     "stepOffset": 6
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 6
@@ -2486,7 +2485,7 @@
                     "stepOffset": 0
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -7
@@ -2495,7 +2494,7 @@
                     "stepOffset": 6
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 5
@@ -2504,7 +2503,7 @@
                     "stepOffset": 0
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 3
@@ -2513,7 +2512,7 @@
                     "stepOffset": 10
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -3
@@ -2522,7 +2521,7 @@
                     "stepOffset": 2
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 3
@@ -2531,7 +2530,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "LongTap",
+                    "beatingStyle": "SpecialHold",
                     "rhythms": [
                         {
                             "positionX": 0,
@@ -2541,7 +2540,7 @@
                     "stepOffset": 2
                 },
                 {
-                    "beatingStyle": "Shake",
+                    "beatingStyle": "Drag",
                     "rhythms": [
                         {
                             "positionX": -1,
@@ -2559,7 +2558,7 @@
                     "stepOffset": 54
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 2
@@ -2568,7 +2567,7 @@
                     "stepOffset": 4
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -2
@@ -2577,7 +2576,7 @@
                     "stepOffset": 3
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 2
@@ -2586,7 +2585,7 @@
                     "stepOffset": 3
                 },
                 {
-                    "beatingStyle": "MediumTap",
+                    "beatingStyle": "Hold",
                     "rhythms": [
                         {
                             "positionX": -5,
@@ -2596,7 +2595,7 @@
                     "stepOffset": 2
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": 2
@@ -2605,7 +2604,7 @@
                     "stepOffset": 26
                 },
                 {
-                    "beatingStyle": "ShortTap",
+                    "beatingStyle": "Click",
                     "rhythms": [
                         {
                             "positionX": -2
@@ -2614,7 +2613,7 @@
                     "stepOffset": 2
                 },
                 {
-                    "beatingStyle": "LongTap",
+                    "beatingStyle": "SpecialHold",
                     "rhythms": [
                         {
                             "positionX": 5,
@@ -2628,18 +2627,14 @@
         {
             "difficultyLevel": 6,
             "difficulty": "Hard",
-            "beatUnit": 2,
-            "notes": [
-                {}
-            ]
+            "beatUnit": 8,
+            "notes": []
         },
         {
             "difficultyLevel": 9,
             "difficulty": "Chaos",
             "beatUnit": 4,
-            "notes": [
-                {}
-            ]
+            "notes": []
         }
     ]
 }

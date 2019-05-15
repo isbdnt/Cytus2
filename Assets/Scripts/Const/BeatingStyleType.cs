@@ -2,10 +2,10 @@
 {
     public enum BeatingStyleType
     {
-        ShortTap,
-        MediumTap,
-        LongTap,
-        Shake,
-        Wave,
+        Click,
+        Hold,
+        SpecialHold,
+        Drag,
+        Flick,
     }
 }

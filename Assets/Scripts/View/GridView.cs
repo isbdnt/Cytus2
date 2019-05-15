@@ -113,11 +113,11 @@ namespace Cytus2
             _noteViewMap.Clear();
             _scanLine.transform.SetAsLastSibling();
             NoteView.pool.DespawnAllEntities();
-            ShortTapRhythmView.pool.DespawnAllEntities();
-            MediumTapRhythmView.pool.DespawnAllEntities();
-            LongTapRhythmView.pool.DespawnAllEntities();
-            ShakeRhythmView.pool.DespawnAllEntities();
-            WaveRhythmView.pool.DespawnAllEntities();
+            ClickPieceView.pool.DespawnAllEntities();
+            HoldPieceView.pool.DespawnAllEntities();
+            SpecialHoldPieceView.pool.DespawnAllEntities();
+            DragPieceView.pool.DespawnAllEntities();
+            FlickPieceView.pool.DespawnAllEntities();
             BeatingResultView.pool.DespawnAllEntities();
         }
 
@@ -230,11 +230,11 @@ namespace Cytus2
             _grid.onPointChange -= HandleGridPointChange;
             _grid.onComboChange -= HandleGridComboChange;
             NoteView.pool.ReleaseAllEntities();
-            ShortTapRhythmView.pool.ReleaseAllEntities();
-            MediumTapRhythmView.pool.ReleaseAllEntities();
-            LongTapRhythmView.pool.ReleaseAllEntities();
-            ShakeRhythmView.pool.ReleaseAllEntities();
-            WaveRhythmView.pool.ReleaseAllEntities();
+            ClickPieceView.pool.ReleaseAllEntities();
+            HoldPieceView.pool.ReleaseAllEntities();
+            SpecialHoldPieceView.pool.ReleaseAllEntities();
+            DragPieceView.pool.ReleaseAllEntities();
+            FlickPieceView.pool.ReleaseAllEntities();
             BeatingResultView.pool.ReleaseAllEntities();
         }
     }

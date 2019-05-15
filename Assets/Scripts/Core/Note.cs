@@ -6,9 +6,9 @@ namespace Cytus2
 {
     public class Note
     {
-        public event Action<Rhythm> onAddRhythm = delegate { };
+        public event Action<Piece> onAddRhythm = delegate { };
 
-        public event Action<Rhythm> onRemoveRhythm = delegate { };
+        public event Action<Piece> onRemoveRhythm = delegate { };
 
         public Grid grid { get; private set; }
         public Vector2 position { get; private set; }
@@ -17,8 +17,8 @@ namespace Cytus2
         public BeatingStyleType beatingStyle => _data.beatingStyle;
         public bool ended => _runningRhythms.Count == 0 && _pendingRhythms.Count == 0;
 
-        private Queue<Rhythm> _pendingRhythms = new Queue<Rhythm>();
-        private List<Rhythm> _runningRhythms = new List<Rhythm>();
+        private Queue<Piece> _pendingRhythms = new Queue<Piece>();
+        private List<Piece> _runningRhythms = new List<Piece>();
         private NoteData _data;
 
         public Note(Grid grid, NoteData data, int stepOffset)
@@ -29,30 +29,30 @@ namespace Cytus2
             position = new Vector2(_data.rhythms[0].positionX, GridUtility.StepToPositionY(stepOffset + 16 - grid.stepOffset));
             direction = GridUtility.StepToDirection(stepOffset + 16 - grid.stepOffset);
             int rhythmStepOffset = stepOffset;
-            Rhythm previousRhythm = null;
+            Piece previousRhythm = null;
             foreach (var rhythmData in _data.rhythms)
             {
-                Rhythm rhythm;
+                Piece rhythm;
                 switch (data.beatingStyle)
                 {
-                    case BeatingStyleType.ShortTap:
-                        rhythm = new ShortTapRhythm(this, rhythmData, rhythmStepOffset);
+                    case BeatingStyleType.Click:
+                        rhythm = new ClickPiece(this, rhythmData, rhythmStepOffset);
                         break;
 
-                    case BeatingStyleType.MediumTap:
-                        rhythm = new MediumTapRhythm(this, rhythmData, rhythmStepOffset);
+                    case BeatingStyleType.Hold:
+                        rhythm = new HoldPiece(this, rhythmData, rhythmStepOffset);
                         break;
 
-                    case BeatingStyleType.LongTap:
-                        rhythm = new LongTapRhythm(this, rhythmData, rhythmStepOffset);
+                    case BeatingStyleType.SpecialHold:
+                        rhythm = new SpecialHoldPiece(this, rhythmData, rhythmStepOffset);
                         break;
 
-                    case BeatingStyleType.Shake:
-                        rhythm = new ShakeRhythm(this, rhythmData, rhythmStepOffset);
+                    case BeatingStyleType.Drag:
+                        rhythm = new DragPiece(this, rhythmData, rhythmStepOffset);
                         break;
 
-                    case BeatingStyleType.Wave:
-                        rhythm = new WaveRhythm(this, rhythmData, rhythmStepOffset);
+                    case BeatingStyleType.Flick:
+                        rhythm = new FlickPiece(this, rhythmData, rhythmStepOffset);
                         break;
 
                     default:
@@ -73,14 +73,14 @@ namespace Cytus2
         {
             while (_pendingRhythms.Count > 0 && currentStep >= _pendingRhythms.Peek().stepOffset)
             {
-                Rhythm rhythm = _pendingRhythms.Dequeue();
+                Piece rhythm = _pendingRhythms.Dequeue();
                 _runningRhythms.Add(rhythm);
                 onAddRhythm(rhythm);
             }
 
             for (int i = 0; i < _runningRhythms.Count;)
             {
-                Rhythm rhythm = _runningRhythms[i];
+                Piece rhythm = _runningRhythms[i];
                 rhythm.Update(currentStep);
                 if (rhythm.beatingResult != BeatingResultType.Unknown)
                 {
