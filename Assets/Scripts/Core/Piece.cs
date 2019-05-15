@@ -13,9 +13,9 @@ namespace Cytus2
         public int tempo => _data.tempo;
         public int stepOffset { get; private set; }
 
-        protected RhythmData _data;
+        protected PieceData _data;
 
-        public Piece(Note note, RhythmData data, int stepOffset)
+        public Piece(Note note, PieceData data, int stepOffset)
         {
             this.note = note;
             _data = data;

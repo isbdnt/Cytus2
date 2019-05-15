@@ -6,19 +6,19 @@ namespace Cytus2
 {
     public class Note
     {
-        public event Action<Piece> onAddRhythm = delegate { };
+        public event Action<Piece> onAddPiece = delegate { };
 
-        public event Action<Piece> onRemoveRhythm = delegate { };
+        public event Action<Piece> onRemovePiece = delegate { };
 
         public Grid grid { get; private set; }
         public Vector2 position { get; private set; }
         public int direction { get; private set; }
         public int stepOffset { get; private set; }
         public BeatingStyleType beatingStyle => _data.beatingStyle;
-        public bool ended => _runningRhythms.Count == 0 && _pendingRhythms.Count == 0;
+        public bool ended => _runningPieces.Count == 0 && _pendingPieces.Count == 0;
 
-        private Queue<Piece> _pendingRhythms = new Queue<Piece>();
-        private List<Piece> _runningRhythms = new List<Piece>();
+        private Queue<Piece> _pendingPieces = new Queue<Piece>();
+        private List<Piece> _runningPieces = new List<Piece>();
         private NoteData _data;
 
         public Note(Grid grid, NoteData data, int stepOffset)
@@ -26,65 +26,65 @@ namespace Cytus2
             this.grid = grid;
             _data = data;
             this.stepOffset = stepOffset;
-            position = new Vector2(_data.rhythms[0].positionX, GridUtility.StepToPositionY(stepOffset + 16 - grid.stepOffset));
+            position = new Vector2(_data.pieces[0].positionX, GridUtility.StepToPositionY(stepOffset + 16 - grid.stepOffset));
             direction = GridUtility.StepToDirection(stepOffset + 16 - grid.stepOffset);
-            int rhythmStepOffset = stepOffset;
-            Piece previousRhythm = null;
-            foreach (var rhythmData in _data.rhythms)
+            int pieceStepOffset = stepOffset;
+            Piece previousPiece = null;
+            foreach (var pieceData in _data.pieces)
             {
-                Piece rhythm;
+                Piece piece;
                 switch (data.beatingStyle)
                 {
                     case BeatingStyleType.Click:
-                        rhythm = new ClickPiece(this, rhythmData, rhythmStepOffset);
+                        piece = new ClickPiece(this, pieceData, pieceStepOffset);
                         break;
 
                     case BeatingStyleType.Hold:
-                        rhythm = new HoldPiece(this, rhythmData, rhythmStepOffset);
+                        piece = new HoldPiece(this, pieceData, pieceStepOffset);
                         break;
 
                     case BeatingStyleType.SpecialHold:
-                        rhythm = new SpecialHoldPiece(this, rhythmData, rhythmStepOffset);
+                        piece = new SpecialHoldPiece(this, pieceData, pieceStepOffset);
                         break;
 
                     case BeatingStyleType.Drag:
-                        rhythm = new DragPiece(this, rhythmData, rhythmStepOffset);
+                        piece = new DragPiece(this, pieceData, pieceStepOffset);
                         break;
 
                     case BeatingStyleType.Flick:
-                        rhythm = new FlickPiece(this, rhythmData, rhythmStepOffset);
+                        piece = new FlickPiece(this, pieceData, pieceStepOffset);
                         break;
 
                     default:
                         throw new Exception();
                 }
-                if (previousRhythm != null)
+                if (previousPiece != null)
                 {
-                    rhythm.previous = previousRhythm;
-                    previousRhythm.next = rhythm;
+                    piece.previous = previousPiece;
+                    previousPiece.next = piece;
                 }
-                rhythmStepOffset += rhythm.tempo;
-                _pendingRhythms.Enqueue(rhythm);
-                previousRhythm = rhythm;
+                pieceStepOffset += piece.tempo;
+                _pendingPieces.Enqueue(piece);
+                previousPiece = piece;
             }
         }
 
         public void Update(float currentStep, ref int combo, ref int point)
         {
-            while (_pendingRhythms.Count > 0 && currentStep >= _pendingRhythms.Peek().stepOffset)
+            while (_pendingPieces.Count > 0 && currentStep >= _pendingPieces.Peek().stepOffset)
             {
-                Piece rhythm = _pendingRhythms.Dequeue();
-                _runningRhythms.Add(rhythm);
-                onAddRhythm(rhythm);
+                Piece piece = _pendingPieces.Dequeue();
+                _runningPieces.Add(piece);
+                onAddPiece(piece);
             }
 
-            for (int i = 0; i < _runningRhythms.Count;)
+            for (int i = 0; i < _runningPieces.Count;)
             {
-                Piece rhythm = _runningRhythms[i];
-                rhythm.Update(currentStep);
-                if (rhythm.beatingResult != BeatingResultType.Unknown)
+                Piece piece = _runningPieces[i];
+                piece.Update(currentStep);
+                if (piece.beatingResult != BeatingResultType.Unknown)
                 {
-                    switch (rhythm.beatingResult)
+                    switch (piece.beatingResult)
                     {
                         case BeatingResultType.Good:
                             if (combo >= 0)
@@ -110,8 +110,8 @@ namespace Cytus2
                         default:
                             break;
                     }
-                    _runningRhythms.RemoveAt(i);
-                    onRemoveRhythm(rhythm);
+                    _runningPieces.RemoveAt(i);
+                    onRemovePiece(piece);
                 }
                 else
                 {

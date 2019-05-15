@@ -4,6 +4,6 @@
     {
         public int stepOffset;
         public BeatingStyleType beatingStyle;
-        public RhythmData[] rhythms;
+        public PieceData[] pieces;
     }
 }

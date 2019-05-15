@@ -1,6 +1,6 @@
 ﻿namespace Cytus2
 {
-    public class RhythmData
+    public class PieceData
     {
         public int positionX;
         public int tempo;

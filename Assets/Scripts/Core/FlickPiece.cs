@@ -6,7 +6,7 @@ namespace Cytus2
     {
         public override float beatingSteps => 0;
 
-        public FlickPiece(Note note, RhythmData data, int stepOffset) : base(note, data, stepOffset)
+        public FlickPiece(Note note, PieceData data, int stepOffset) : base(note, data, stepOffset)
         {
         }
 

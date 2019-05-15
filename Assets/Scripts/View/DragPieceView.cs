@@ -11,13 +11,13 @@ namespace Cytus2
 
         public event Action<IPieceView> onDestroy;
 
-        public Piece rhythm { get; private set; }
+        public Piece piece { get; private set; }
 
         public bool testBeat;
         private Animator _animator;
         private Image _tempo;
         private GameObject _icon;
-        private Piece _currentRhythm;
+        private Piece _currentPiece;
 
         private void Awake()
         {
@@ -26,13 +26,13 @@ namespace Cytus2
             _tempo = transform.Find("Tempo").GetComponent<Image>();
         }
 
-        public void Initialize(NoteView noteView, Piece rhythm)
+        public void Initialize(NoteView noteView, Piece piece)
         {
-            this.rhythm = rhythm;
+            this.piece = piece;
             transform.SetAsFirstSibling();
-            transform.position = GridView.instance.anchor.ToWorldPosition(rhythm.position);
+            transform.position = GridView.instance.anchor.ToWorldPosition(piece.position);
 
-            if (this.rhythm.previous == null)
+            if (this.piece.previous == null)
             {
                 _icon.transform.localScale = new Vector3(2f, 2f, 1f);
             }
@@ -45,15 +45,15 @@ namespace Cytus2
             _animator.enabled = true;
             _animator.Play("DragPiece", -1, 0);
 
-            if (this.rhythm.next == null)
+            if (this.piece.next == null)
             {
                 _tempo.gameObject.SetActive(false);
             }
             else
             {
                 _tempo.gameObject.SetActive(true);
-                _tempo.transform.position = GridView.instance.anchor.ToWorldPosition(this.rhythm.position);
-                Vector3 dir = this.rhythm.next.position - this.rhythm.position;
+                _tempo.transform.position = GridView.instance.anchor.ToWorldPosition(this.piece.position);
+                Vector3 dir = this.piece.next.position - this.piece.position;
                 if (GridView.instance.anchor.direction < 0)
                 {
                     dir.y = -dir.y;
@@ -64,15 +64,15 @@ namespace Cytus2
                 _tempo.fillOrigin = 0;
             }
             onDestroy = delegate { };
-            _currentRhythm = null;
+            _currentPiece = null;
             _icon.SetActive(true);
         }
 
         public void ShowBeatingResult()
         {
-            BeatingResultView beatingResultView = GridUtility.SpawnBeatingResultView(rhythm.beatingResult);
-            beatingResultView.Initialize(GridView.instance.anchor.ToWorldPosition(rhythm.position));
-            if (rhythm.previous != null)
+            BeatingResultView beatingResultView = GridUtility.SpawnBeatingResultView(piece.beatingResult);
+            beatingResultView.Initialize(GridView.instance.anchor.ToWorldPosition(piece.position));
+            if (piece.previous != null)
             {
                 if (_tempo.gameObject.activeSelf)
                 {
@@ -90,7 +90,7 @@ namespace Cytus2
             if (testBeat)
             {
                 testBeat = false;
-                rhythm.BeatTime();
+                piece.BeatTime();
             }
         }
 
@@ -98,9 +98,9 @@ namespace Cytus2
         {
             if (_tempo.gameObject.activeSelf)
             {
-                if (currentStep < rhythm.stepOffset + 16)
+                if (currentStep < piece.stepOffset + 16)
                 {
-                    _tempo.fillAmount = (currentStep - rhythm.stepOffset) / rhythm.tempo;
+                    _tempo.fillAmount = (currentStep - piece.stepOffset) / piece.tempo;
                 }
                 else
                 {
@@ -108,31 +108,31 @@ namespace Cytus2
                     {
                         _tempo.fillOrigin = 1;
                     }
-                    _tempo.fillAmount = 1f - (currentStep - rhythm.stepOffset - 16f) / rhythm.tempo;
+                    _tempo.fillAmount = 1f - (currentStep - piece.stepOffset - 16f) / piece.tempo;
                 }
             }
 
-            if (rhythm.previous == null)
+            if (piece.previous == null)
             {
-                if (_currentRhythm == null)
+                if (_currentPiece == null)
                 {
-                    if (currentStep >= rhythm.stepOffset + 16f)
+                    if (currentStep >= piece.stepOffset + 16f)
                     {
-                        _currentRhythm = rhythm;
+                        _currentPiece = piece;
                         _animator.enabled = false;
                     }
                 }
 
-                if (_currentRhythm != null && _currentRhythm.next != null)
+                if (_currentPiece != null && _currentPiece.next != null)
                 {
-                    if (currentStep >= _currentRhythm.stepOffset + 16f + _currentRhythm.tempo)
+                    if (currentStep >= _currentPiece.stepOffset + 16f + _currentPiece.tempo)
                     {
-                        _currentRhythm = _currentRhythm.next;
+                        _currentPiece = _currentPiece.next;
                         transform.SetSiblingIndex(transform.GetSiblingIndex() - 1);
                     }
-                    if (_currentRhythm.next != null)
+                    if (_currentPiece.next != null)
                     {
-                        _icon.transform.position = GridView.instance.anchor.ToWorldPosition(Vector2.Lerp(_currentRhythm.position, _currentRhythm.next.position, (currentStep - _currentRhythm.stepOffset - 16f) / _currentRhythm.tempo));
+                        _icon.transform.position = GridView.instance.anchor.ToWorldPosition(Vector2.Lerp(_currentPiece.position, _currentPiece.next.position, (currentStep - _currentPiece.stepOffset - 16f) / _currentPiece.tempo));
                     }
                     else
                     {
@@ -144,16 +144,16 @@ namespace Cytus2
 
         private void LateUpdate()
         {
-            if (rhythm.previous == null)
+            if (piece.previous == null)
             {
-                if (_currentRhythm != null && _currentRhythm.next == null && _currentRhythm.note.grid.currentStep >= _currentRhythm.stepOffset + 16f + _currentRhythm.tempo && rhythm.beatingResult != BeatingResultType.Unknown)
+                if (_currentPiece != null && _currentPiece.next == null && _currentPiece.note.grid.currentStep >= _currentPiece.stepOffset + 16f + _currentPiece.tempo && piece.beatingResult != BeatingResultType.Unknown)
                 {
                     Destroy();
                 }
             }
             else
             {
-                if (rhythm.note.grid.currentStep >= rhythm.stepOffset + 16 + rhythm.tempo && rhythm.beatingResult != BeatingResultType.Unknown)
+                if (piece.note.grid.currentStep >= piece.stepOffset + 16 + piece.tempo && piece.beatingResult != BeatingResultType.Unknown)
                 {
                     Destroy();
                 }
@@ -162,12 +162,12 @@ namespace Cytus2
 
         public void OnPointerDown(PointerEventData eventData)
         {
-            rhythm.BeatTime();
+            piece.BeatTime();
         }
 
         public void OnPointerUp(PointerEventData eventData)
         {
-            rhythm.StopBeating();
+            piece.StopBeating();
         }
 
         public void OnPointerEnter(PointerEventData eventData)
@@ -175,16 +175,16 @@ namespace Cytus2
 #if UNITY_EDITOR
             if (Input.GetMouseButton(0))
             {
-                rhythm.BeatTime();
+                piece.BeatTime();
             }
 #else
-            rhythm.BeatTime();
+            piece.BeatTime();
 #endif
         }
 
         public void OnPointerExit(PointerEventData eventData)
         {
-            rhythm.StopBeating();
+            piece.StopBeating();
         }
 
         private void Destroy()

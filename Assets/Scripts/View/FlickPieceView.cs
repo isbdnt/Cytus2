@@ -10,7 +10,7 @@ namespace Cytus2
 
         public event Action<IPieceView> onDestroy;
 
-        public Piece rhythm { get; private set; }
+        public Piece piece { get; private set; }
 
         public bool testBeat;
         private Animator _animator;
@@ -20,10 +20,10 @@ namespace Cytus2
             _animator = GetComponent<Animator>();
         }
 
-        public void Initialize(NoteView noteView, Piece rhythm)
+        public void Initialize(NoteView noteView, Piece piece)
         {
-            this.rhythm = rhythm;
-            transform.position = GridView.instance.anchor.ToWorldPosition(rhythm.position);
+            this.piece = piece;
+            transform.position = GridView.instance.anchor.ToWorldPosition(piece.position);
 
             _animator.speed = 1f / (GridView.instance.turnLength * 1.25f);
             _animator.Play("FlickPiece", -1, 0);
@@ -33,8 +33,8 @@ namespace Cytus2
 
         public void ShowBeatingResult()
         {
-            BeatingResultView beatingResultView = GridUtility.SpawnBeatingResultView(rhythm.beatingResult);
-            beatingResultView.Initialize(GridView.instance.anchor.ToWorldPosition(rhythm.position));
+            BeatingResultView beatingResultView = GridUtility.SpawnBeatingResultView(piece.beatingResult);
+            beatingResultView.Initialize(GridView.instance.anchor.ToWorldPosition(piece.position));
             Destroy();
         }
 
@@ -43,7 +43,7 @@ namespace Cytus2
             if (testBeat)
             {
                 testBeat = false;
-                rhythm.BeatTime();
+                piece.BeatTime();
             }
         }
 
@@ -53,7 +53,7 @@ namespace Cytus2
 
         public void OnDrag(PointerEventData eventData)
         {
-            rhythm.BeatTime();
+            piece.BeatTime();
         }
 
         private void Destroy()

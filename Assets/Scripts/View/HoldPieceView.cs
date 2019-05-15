@@ -10,7 +10,7 @@ namespace Cytus2
 
         public event Action<IPieceView> onDestroy;
 
-        public Piece rhythm { get; private set; }
+        public Piece piece { get; private set; }
 
         public bool testBeat;
         private RectTransform _tempTransform;
@@ -28,40 +28,40 @@ namespace Cytus2
             _icon = transform.Find("Icon").GetComponent<CanvasGroup>();
         }
 
-        public void Initialize(NoteView noteView, Piece rhythm)
+        public void Initialize(NoteView noteView, Piece piece)
         {
-            this.rhythm = rhythm;
+            this.piece = piece;
 
-            transform.position = GridView.instance.anchor.ToWorldPosition(rhythm.position);
+            transform.position = GridView.instance.anchor.ToWorldPosition(piece.position);
 
             _animator.speed = 1f / (GridView.instance.turnLength * 1.25f);
             _animator.enabled = true;
             _animator.Play("HoldPiece", -1, 0);
 
             _tempoFillTransform.rotation = Quaternion.identity;
-            float angleZ = rhythm.note.direction * GridView.instance.anchor.direction > 0 ? 180f : 0f;
+            float angleZ = piece.note.direction * GridView.instance.anchor.direction > 0 ? 180f : 0f;
             _tempoFillTransform.Rotate(new Vector3(0f, 0f, angleZ));
             _tempoFillTransform.sizeDelta = Vector2.zero;
 
             _tempTransform.rotation = Quaternion.identity;
-            _tempTransform.sizeDelta = new Vector2(GridView.instance.cellSize * 1.7f, rhythm.tempo / 2 * GridView.instance.cellSize);
+            _tempTransform.sizeDelta = new Vector2(GridView.instance.cellSize * 1.7f, piece.tempo / 2 * GridView.instance.cellSize);
             _tempTransform.Rotate(new Vector3(0f, 0f, angleZ));
             onDestroy = delegate { };
         }
 
         public void ShowBeatingResult()
         {
-            BeatingResultView beatingResultView = GridUtility.SpawnBeatingResultView(rhythm.beatingResult);
-            switch (rhythm.beatingResult)
+            BeatingResultView beatingResultView = GridUtility.SpawnBeatingResultView(piece.beatingResult);
+            switch (piece.beatingResult)
             {
                 case BeatingResultType.Good:
                 case BeatingResultType.Perfect:
                 case BeatingResultType.Bad:
-                    beatingResultView.Initialize(new Vector3(GridView.instance.anchor.ToWorldPosition(rhythm.position).x, GridView.instance.scanLinePosition.y));
+                    beatingResultView.Initialize(new Vector3(GridView.instance.anchor.ToWorldPosition(piece.position).x, GridView.instance.scanLinePosition.y));
                     break;
 
                 case BeatingResultType.Miss:
-                    beatingResultView.Initialize(GridView.instance.anchor.ToWorldPosition(rhythm.position));
+                    beatingResultView.Initialize(GridView.instance.anchor.ToWorldPosition(piece.position));
                     break;
 
                 default:
@@ -75,13 +75,13 @@ namespace Cytus2
             if (testBeat)
             {
                 testBeat = false;
-                rhythm.BeatTime();
+                piece.BeatTime();
             }
         }
 
         public void Render(float currentStep)
         {
-            if (rhythm.beatingSteps > 0f)
+            if (piece.beatingSteps > 0f)
             {
                 if (_animator.enabled)
                 {
@@ -89,13 +89,13 @@ namespace Cytus2
                     _icon.alpha = 1f;
                     _tempCanvas.alpha = 1f;
                 }
-                _tempoFillTransform.sizeDelta = new Vector2(GridView.instance.cellSize * 1.7f, GridView.instance.cellSize * (currentStep - rhythm.stepOffset - 16f) / 2f);
+                _tempoFillTransform.sizeDelta = new Vector2(GridView.instance.cellSize * 1.7f, GridView.instance.cellSize * (currentStep - piece.stepOffset - 16f) / 2f);
             }
         }
 
         public void OnPointerExit(PointerEventData eventData)
         {
-            rhythm.StopBeating();
+            piece.StopBeating();
         }
 
         public void OnPointerEnter(PointerEventData eventData)
@@ -103,21 +103,21 @@ namespace Cytus2
 #if UNITY_EDITOR
             if (Input.GetMouseButton(0))
             {
-                rhythm.BeatTime();
+                piece.BeatTime();
             }
 #else
-            rhythm.BeatTime();
+            piece.BeatTime();
 #endif
         }
 
         public void OnPointerUp(PointerEventData eventData)
         {
-            rhythm.StopBeating();
+            piece.StopBeating();
         }
 
         public void OnPointerDown(PointerEventData eventData)
         {
-            rhythm.BeatTime();
+            piece.BeatTime();
         }
 
         private void Destroy()

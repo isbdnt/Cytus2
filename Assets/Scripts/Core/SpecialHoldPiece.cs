@@ -2,7 +2,7 @@
 {
     public class SpecialHoldPiece : HoldPiece
     {
-        public SpecialHoldPiece(Note note, RhythmData data, int stepOffset) : base(note, data, stepOffset)
+        public SpecialHoldPiece(Note note, PieceData data, int stepOffset) : base(note, data, stepOffset)
         {
         }
     }

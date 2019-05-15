@@ -4,9 +4,9 @@ namespace Cytus2
 {
     public interface IPieceView : IGameObjectPoolEntity
     {
-        Piece rhythm { get; }
+        Piece piece { get; }
 
-        void Initialize(NoteView noteView, Piece rhythm);
+        void Initialize(NoteView noteView, Piece piece);
 
         void ShowBeatingResult();
 

@@ -8,7 +8,7 @@
         private float _beatingSteps;
         private bool _beating;
 
-        public HoldPiece(Note note, RhythmData data, int stepOffset) : base(note, data, stepOffset)
+        public HoldPiece(Note note, PieceData data, int stepOffset) : base(note, data, stepOffset)
         {
         }
 

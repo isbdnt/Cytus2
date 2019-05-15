@@ -12,79 +12,79 @@ namespace Cytus2
 
         public Note note { get; private set; }
 
-        protected Dictionary<Piece, IPieceView> _rhythmViewMap;
+        protected Dictionary<Piece, IPieceView> _pieceViewMap;
 
         public void Initialize(Note note)
         {
             this.note = note;
-            note.onAddRhythm += HandleNoteAddRhythm;
-            note.onRemoveRhythm += HandleNoteRemoveRhythm;
+            note.onAddPiece += HandleNoteAddPiece;
+            note.onRemovePiece += HandleNoteRemovePiece;
             transform.SetAsFirstSibling();
             transform.position = GridView.instance.anchor.ToWorldPosition(note.position);
-            _rhythmViewMap = new Dictionary<Piece, IPieceView>();
+            _pieceViewMap = new Dictionary<Piece, IPieceView>();
             onDestroy = delegate { };
         }
 
-        private void HandleNoteAddRhythm(Piece rhythm)
+        private void HandleNoteAddPiece(Piece piece)
         {
-            IPieceView rhythmView;
+            IPieceView pieceView;
             switch (note.beatingStyle)
             {
                 case BeatingStyleType.Click:
-                    rhythmView = ClickPieceView.pool.SpawnEntity(transform, false);
+                    pieceView = ClickPieceView.pool.SpawnEntity(transform, false);
                     break;
 
                 case BeatingStyleType.Hold:
-                    rhythmView = HoldPieceView.pool.SpawnEntity(transform, false);
+                    pieceView = HoldPieceView.pool.SpawnEntity(transform, false);
                     break;
 
                 case BeatingStyleType.SpecialHold:
-                    rhythmView = SpecialHoldPieceView.pool.SpawnEntity(transform, false);
+                    pieceView = SpecialHoldPieceView.pool.SpawnEntity(transform, false);
                     break;
 
                 case BeatingStyleType.Drag:
-                    rhythmView = DragPieceView.pool.SpawnEntity(transform, false);
+                    pieceView = DragPieceView.pool.SpawnEntity(transform, false);
                     break;
 
                 case BeatingStyleType.Flick:
-                    rhythmView = FlickPieceView.pool.SpawnEntity(transform, false);
+                    pieceView = FlickPieceView.pool.SpawnEntity(transform, false);
                     break;
 
                 default:
                     throw new Exception();
             }
-            rhythmView.Initialize(this, rhythm);
-            rhythmView.onDestroy += HandleRhythmViewDestroy;
-            _rhythmViewMap[rhythm] = rhythmView;
+            pieceView.Initialize(this, piece);
+            pieceView.onDestroy += HandlePieceViewDestroy;
+            _pieceViewMap[piece] = pieceView;
         }
 
-        private void HandleRhythmViewDestroy(IPieceView rhythmView)
+        private void HandlePieceViewDestroy(IPieceView pieceView)
         {
-            _rhythmViewMap.Remove(rhythmView.rhythm);
-            if (_rhythmViewMap.Count == 0)
+            _pieceViewMap.Remove(pieceView.piece);
+            if (_pieceViewMap.Count == 0)
             {
                 onDestroy(this);
                 Despawn();
             }
         }
 
-        private void HandleNoteRemoveRhythm(Piece rhythm)
+        private void HandleNoteRemovePiece(Piece piece)
         {
-            _rhythmViewMap[rhythm].ShowBeatingResult();
+            _pieceViewMap[piece].ShowBeatingResult();
         }
 
         public void Render(float currentStep)
         {
-            foreach (var rhythmView in _rhythmViewMap.Values)
+            foreach (var pieceView in _pieceViewMap.Values)
             {
-                rhythmView.Render(currentStep);
+                pieceView.Render(currentStep);
             }
         }
 
         public void Despawn()
         {
-            note.onAddRhythm -= HandleNoteAddRhythm;
-            note.onRemoveRhythm -= HandleNoteRemoveRhythm;
+            note.onAddPiece -= HandleNoteAddPiece;
+            note.onRemovePiece -= HandleNoteRemovePiece;
             pool.DespawnEntity(this);
         }
     }

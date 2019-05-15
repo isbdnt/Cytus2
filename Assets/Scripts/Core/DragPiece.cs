@@ -8,7 +8,7 @@ namespace Cytus2
 
         private bool _beating;
 
-        public DragPiece(Note note, RhythmData data, int stepOffset) : base(note, data, stepOffset)
+        public DragPiece(Note note, PieceData data, int stepOffset) : base(note, data, stepOffset)
         {
         }
 

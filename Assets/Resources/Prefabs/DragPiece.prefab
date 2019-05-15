@@ -169,7 +169,7 @@ GameObject:
   - component: {fileID: 4978512904300601894}
   - component: {fileID: 6191469728888520194}
   m_Layer: 5
-  m_Name: ShakeRhythm
+  m_Name: ShakePiece
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
