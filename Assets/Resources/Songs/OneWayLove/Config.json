@@ -3,7 +3,7 @@
     "name": "One Way Love",
     "bpm": 90,
     "beatUnit": 4,
-    "timeOffset": 0,
+    "timeOffset": 0.28,
     "upsideDown": false,
     "charts": [
         {

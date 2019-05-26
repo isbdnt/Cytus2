@@ -62,6 +62,7 @@ namespace Cytus2
             GridView.NewInstance();
             BindGridEvents();
             HandleGridPause();
+            GridView.instance.Initialize(ResourceManager.instance.songDataMap[1], 0);
             GridView.instance.StartGame();
         }
 
